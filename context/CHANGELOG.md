@@ -14,6 +14,18 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Fase 3 — Halaman Beranda & Search Widget (2026-10-10)
+**FR terkait:** FR-2.1, FR-2.2, FR-2.3, FR-2.4, FR-2.5, FR-2.6, FR-2.7, FR-2.8, FR-2.9, FR-2.10
+**Yang dikerjakan:**
+- Membuat composables `useInView.js` dan `useCountUp.js` untuk animasi angka hitung saat elemen terlihat
+- Membuat komponen kartu `VehicleCard.vue` (spesifikasi berikon & indikator bentrok tanggal) dan `TourCard.vue` (destinasi & harga mulai)
+- Membuat `SearchWidget.vue` (FR-2.2: toggle Mobil/Motor, pilih lokasi, input tanggal ambil/kembali dengan validasi inline, navigasi ke `/armada` dengan query URL)
+- Membuat section Beranda: `HeroSection.vue` (FR-2.1: slider gambar & headline dengan auto-play pause on hover/reduced motion), `WhyUsSection.vue` (FR-2.3: 3 kartu keunggulan), `AboutSection.vue` (FR-2.4: poin jaminan & animasi tahun pengalaman), `FeaturedVehiclesSection.vue` (FR-2.5: tab Mobil/Motor), `CategoriesSection.vue` (FR-2.6: hitung unit per kategori dinamis), `FeaturedToursSection.vue` (FR-2.7), `CallToActionStrip.vue` (FR-2.8: telepon/WA), `FunFactsSection.vue` (FR-2.9: 3 angka beranimasi), dan `TestimonialsSection.vue` (FR-2.10)
+- Merakit seluruh section pada `src/pages/Home.vue` dan menulis unit test (`src/test/home.test.js`)
+**File yang berubah:** src/composables/*.js, src/components/vehicle/*.vue, src/components/tour/*.vue, src/components/forms/*.vue, src/components/sections/*.vue, src/pages/Home.vue, src/test/home.test.js, AGENTS.md, context/CHANGELOG.md
+**Test:** 25 passed / 25 total
+**Docs updated:** tidak ada perubahan scope
+
 ## Fase 1 — Layout Global & Komponen UI Dasar (2026-10-10)
 **FR terkait:** FR-1.1, FR-1.2, FR-1.3, FR-1.4, FR-1.5, FR-1.6, FR-1.7, FR-1.8
 **Yang dikerjakan:**
