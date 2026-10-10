@@ -14,6 +14,18 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Fase 6 — Paket Wisata (Daftar, Detail, Panel Harga) (2026-10-10)
+**FR terkait:** FR-5.1, FR-5.2, FR-5.3, FR-5.4, FR-5.5
+**Yang dikerjakan:**
+- Membuat composable `useTourFilters.js` untuk memfilter paket wisata berdasarkan durasi dan rentang harga serta sinkronisasi query URL
+- Membuat `TourPricePanel.vue` (FR-5.3 & FR-5.4: pemilih tanggal berangkat, konter jumlah peserta dengan batas `minPax`–`maxPax`, tabel skema tier harga, rincian total estimasi, dan bar CTA melayang pada mobile)
+- Merakit `src/pages/Tours.vue` (FR-5.1: grid kartu tur, filter durasi, dan pengurutan harga/popularitas)
+- Merakit `src/pages/TourDetail.vue` (FR-5.2: daftar destinasi utama, itinerary per hari via `Accordion.vue`, titik kumpul, 'Sudah/Belum termasuk', FR-5.5: paket tur lainnya max 3 unit & fallback 404 jika slug tidak ditemukan)
+- Menulis unit test untuk filter tur dan perhitungan tier panel harga (`src/test/tours.test.js`)
+**File yang berubah:** src/composables/useTourFilters.js, src/components/tour/TourPricePanel.vue, src/pages/Tours.vue, src/pages/TourDetail.vue, src/test/tours.test.js, AGENTS.md, context/CHANGELOG.md
+**Test:** 33 passed / 33 total
+**Docs updated:** tidak ada perubahan scope
+
 ## Fase 5 — Detail Armada & Panel Harga (2026-10-10)
 **FR terkait:** FR-4.1, FR-4.2, FR-4.3, FR-4.4, FR-4.5, FR-4.6, FR-4.7
 **Yang dikerjakan:**
