@@ -14,6 +14,16 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Fase 7 — Pemesanan 3 Langkah & WhatsApp (2026-10-10)
+**FR terkait:** FR-6.1, FR-6.2, FR-6.3, FR-6.4, FR-6.5, FR-6.6
+**Yang dikerjakan:**
+- Membuat komponen wizard 3 langkah: `BookingStep1.vue` (FR-6.2: ringkasan pilihan item, jadwal, lokasi, & opsi + callout jika belum ada item dipilih), `BookingStep2.vue` (FR-6.3: form data pemesan dengan validasi Zod pada blur/submit & auto-focus field error pertama), dan `BookingStep3.vue` (FR-6.4 & FR-6.5: konfirmasi ringkasan akhir, tombol utama 'Kirim via WhatsApp', tombol sekunder 'Salin Ringkasan' + toast, pembersihan draft di `sessionStorage`, dan penjelasan konfirmasi admin)
+- Merakit `src/pages/Booking.vue` (FR-6.1: bilah progres 3 langkah interaktif & FR-6.6: navigasi bolak-balik tanpa kehilangan isian form)
+- Menulis unit test untuk alur 3 langkah dan validasi form data pemesan (`src/test/booking.test.js`)
+**File yang berubah:** src/components/forms/BookingStep1.vue, src/components/forms/BookingStep2.vue, src/components/forms/BookingStep3.vue, src/pages/Booking.vue, src/test/booking.test.js, AGENTS.md, context/CHANGELOG.md
+**Test:** 38 passed / 38 total
+**Docs updated:** tidak ada perubahan scope
+
 ## Fase 6 — Paket Wisata (Daftar, Detail, Panel Harga) (2026-10-10)
 **FR terkait:** FR-5.1, FR-5.2, FR-5.3, FR-5.4, FR-5.5
 **Yang dikerjakan:**
