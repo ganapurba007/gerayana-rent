@@ -1,10 +1,9 @@
 <script setup>
+import AppLayout from './components/layout/AppLayout.vue'
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col font-sans bg-slate-50 text-slate-800">
-    <main class="flex-grow">
-      <router-view />
-    </main>
-  </div>
+  <AppLayout>
+    <router-view />
+  </AppLayout>
 </template>
