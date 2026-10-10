@@ -3,7 +3,12 @@
     "id": 1,
     "slug": "paket-wisata-bromo-sunrise-2h1m",
     "title": "Exotic Bromo Sunrise & Crater Adventure",
-    "destinations": ["Penanjakan Sunrise", "Kawah Bromo", "Pasir Berbisik", "Bukit Teletubbies"],
+    "destinations": [
+      "Penanjakan Sunrise",
+      "Kawah Bromo",
+      "Pasir Berbisik",
+      "Bukit Teletubbies"
+    ],
     "durationDays": 2,
     "durationNights": 1,
     "summary": "Menikmati pemandangan matahari terbit legendaris di Bromo dan menjelajahi lautan pasir dengan Jeep 4x4.",
@@ -11,9 +16,21 @@
     "minPax": 2,
     "maxPax": 12,
     "priceTiers": [
-      { "minPax": 2, "maxPax": 4, "pricePerPerson": 850000 },
-      { "minPax": 5, "maxPax": 8, "pricePerPerson": 650000 },
-      { "minPax": 9, "maxPax": 12, "pricePerPerson": 500000 }
+      {
+        "minPax": 2,
+        "maxPax": 4,
+        "pricePerPerson": 850000
+      },
+      {
+        "minPax": 5,
+        "maxPax": 8,
+        "pricePerPerson": 650000
+      },
+      {
+        "minPax": 9,
+        "maxPax": 12,
+        "pricePerPerson": 500000
+      }
     ],
     "itinerary": [
       {
@@ -36,12 +53,21 @@
         ]
       }
     ],
-    "includes": ["Sewa Jeep 4x4", "Tiket Masuk Taman Nasional", "Driver & BBM", "Snack & Air Mineral", "Dokumentasi Foto"],
-    "excludes": ["Sewa Kuda di Bromo", "Pengeluaran Pribadi", "Makan Siang / Malam Tambahan"],
+    "includes": [
+      "Sewa Jeep 4x4",
+      "Tiket Masuk Taman Nasional",
+      "Driver & BBM",
+      "Snack & Air Mineral",
+      "Dokumentasi Foto"
+    ],
+    "excludes": [
+      "Sewa Kuda di Bromo",
+      "Pengeluaran Pribadi",
+      "Makan Siang / Malam Tambahan"
+    ],
     "meetingPoint": "Stasiun / Bandara / Hotel Area Kota",
     "images": [
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop"
+      "/images/tours/tour-bromo.jpg"
     ],
     "featured": true,
     "popularity": 99
@@ -50,7 +76,12 @@
     "id": 2,
     "slug": "city-tour-heritage-culinary-1d",
     "title": "City Tour Heritage & Culinary Day Trip",
-    "destinations": ["Kawasan Kota Tua", "Museum Sejarah", "Pusat Kuliner Lokal", "Sentra Oleh-Oleh"],
+    "destinations": [
+      "Kawasan Kota Tua",
+      "Museum Sejarah",
+      "Pusat Kuliner Lokal",
+      "Sentra Oleh-Oleh"
+    ],
     "durationDays": 1,
     "durationNights": 0,
     "summary": "Jelajah pesona sejarah kota, bangunan kolonial ikonik, dan santap kuliner legendaris dalam 1 hari.",
@@ -58,8 +89,16 @@
     "minPax": 2,
     "maxPax": 10,
     "priceTiers": [
-      { "minPax": 2, "maxPax": 4, "pricePerPerson": 350000 },
-      { "minPax": 5, "maxPax": 10, "pricePerPerson": 250000 }
+      {
+        "minPax": 2,
+        "maxPax": 4,
+        "pricePerPerson": 350000
+      },
+      {
+        "minPax": 5,
+        "maxPax": 10,
+        "pricePerPerson": 250000
+      }
     ],
     "itinerary": [
       {
@@ -74,11 +113,19 @@
         ]
       }
     ],
-    "includes": ["Mobil AC Privata + Driver Professional", "BBM & Parkir", "Tiket Masuk Objek Wisata", "1x Makan Siang Khas"],
-    "excludes": ["Belanja Pribadi / Oleh-oleh", "Tips Guide/Driver"],
+    "includes": [
+      "Mobil AC Privata + Driver Professional",
+      "BBM & Parkir",
+      "Tiket Masuk Objek Wisata",
+      "1x Makan Siang Khas"
+    ],
+    "excludes": [
+      "Belanja Pribadi / Oleh-oleh",
+      "Tips Guide/Driver"
+    ],
     "meetingPoint": "Lobby Hotel / Stasiun / Bandara",
     "images": [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=800&auto=format&fit=crop"
+      "/images/tours/tour-heritage.jpg"
     ],
     "featured": true,
     "popularity": 93
@@ -87,7 +134,12 @@
     "id": 3,
     "slug": "exotic-beach-snorkeling-3h2m",
     "title": "Exotic Beach & Snorkeling Escape 3H2M",
-    "destinations": ["Pantai Pasir Putih", "Taman Laut Snorkeling", "Tebing Sunset Point", "Kampung Nelayan"],
+    "destinations": [
+      "Pantai Pasir Putih",
+      "Taman Laut Snorkeling",
+      "Tebing Sunset Point",
+      "Kampung Nelayan"
+    ],
     "durationDays": 3,
     "durationNights": 2,
     "summary": "Pengalaman pantai eksotis lengkap dengan agenda snorkeling laut dangkal dan panorama sunset spektakuler.",
@@ -95,9 +147,21 @@
     "minPax": 4,
     "maxPax": 15,
     "priceTiers": [
-      { "minPax": 4, "maxPax": 6, "pricePerPerson": 1450000 },
-      { "minPax": 7, "maxPax": 10, "pricePerPerson": 1200000 },
-      { "minPax": 11, "maxPax": 15, "pricePerPerson": 980000 }
+      {
+        "minPax": 4,
+        "maxPax": 6,
+        "pricePerPerson": 1450000
+      },
+      {
+        "minPax": 7,
+        "maxPax": 10,
+        "pricePerPerson": 1200000
+      },
+      {
+        "minPax": 11,
+        "maxPax": 15,
+        "pricePerPerson": 980000
+      }
     ],
     "itinerary": [
       {
@@ -129,11 +193,19 @@
         ]
       }
     ],
-    "includes": ["Akomodasi Resort 2 Malam (Sharing Bed)", "Perahu Snorkeling & Alat Lengkap", "Makan 5x Sesuai Program", "Pemandu Lokal & Foto Underwater"],
-    "excludes": ["Tiket Pesawat/Kereta ke Kota", "Pengeluaran Pribadi"],
+    "includes": [
+      "Akomodasi Resort 2 Malam (Sharing Bed)",
+      "Perahu Snorkeling & Alat Lengkap",
+      "Makan 5x Sesuai Program",
+      "Pemandu Lokal & Foto Underwater"
+    ],
+    "excludes": [
+      "Tiket Pesawat/Kereta ke Kota",
+      "Pengeluaran Pribadi"
+    ],
     "meetingPoint": "Bandara Utama / Stasiun Kota",
     "images": [
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop"
+      "/images/tours/tour-snorkeling.jpg"
     ],
     "featured": true,
     "popularity": 95
@@ -142,7 +214,11 @@
     "id": 4,
     "slug": "nature-waterfall-adventure-1d",
     "title": "Nature & Waterfall Trekking Adventure 1D",
-    "destinations": ["Air Terjun Bertingkat", "Hutan Pinus", "Spot Foto Sky Bridge"],
+    "destinations": [
+      "Air Terjun Bertingkat",
+      "Hutan Pinus",
+      "Spot Foto Sky Bridge"
+    ],
     "durationDays": 1,
     "durationNights": 0,
     "summary": "Trekking ringan menyusuri hutan pinus sejuk dan bermain air segar di bawah air terjun alami.",
@@ -150,8 +226,16 @@
     "minPax": 2,
     "maxPax": 8,
     "priceTiers": [
-      { "minPax": 2, "maxPax": 4, "pricePerPerson": 300000 },
-      { "minPax": 5, "maxPax": 8, "pricePerPerson": 220000 }
+      {
+        "minPax": 2,
+        "maxPax": 4,
+        "pricePerPerson": 300000
+      },
+      {
+        "minPax": 5,
+        "maxPax": 8,
+        "pricePerPerson": 220000
+      }
     ],
     "itinerary": [
       {
@@ -167,11 +251,19 @@
         ]
       }
     ],
-    "includes": ["Transportasi AC PP", "Local Guide Trekking", "Tiket Masuk Wisata", "1x Makan Siang Khas Saung"],
-    "excludes": ["Pakaian Ganti", "Pengeluaran Pribadi"],
+    "includes": [
+      "Transportasi AC PP",
+      "Local Guide Trekking",
+      "Tiket Masuk Wisata",
+      "1x Makan Siang Khas Saung"
+    ],
+    "excludes": [
+      "Pakaian Ganti",
+      "Pengeluaran Pribadi"
+    ],
     "meetingPoint": "Kota Center / Hotel Peserta",
     "images": [
-      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop"
+      "/images/tours/tour-waterfall-v2.jpg"
     ],
     "featured": false,
     "popularity": 87
@@ -180,7 +272,12 @@
     "id": 5,
     "slug": "highland-tea-plantation-2h1m",
     "title": "Highland Tea Plantation & Glamping 2H1M",
-    "destinations": ["Kebun Teh Dataran Tinggi", "Area Glamping", "Danau Alami", "Pemandian Air Panas"],
+    "destinations": [
+      "Kebun Teh Dataran Tinggi",
+      "Area Glamping",
+      "Danau Alami",
+      "Pemandian Air Panas"
+    ],
     "durationDays": 2,
     "durationNights": 1,
     "summary": "Menginap di tenda glamping mewah di tengah kebun teh hijau lengkap dengan sesi api unggun.",
@@ -188,8 +285,16 @@
     "minPax": 2,
     "maxPax": 10,
     "priceTiers": [
-      { "minPax": 2, "maxPax": 4, "pricePerPerson": 950000 },
-      { "minPax": 5, "maxPax": 10, "pricePerPerson": 750000 }
+      {
+        "minPax": 2,
+        "maxPax": 4,
+        "pricePerPerson": 950000
+      },
+      {
+        "minPax": 5,
+        "maxPax": 10,
+        "pricePerPerson": 750000
+      }
     ],
     "itinerary": [
       {
@@ -212,11 +317,18 @@
         ]
       }
     ],
-    "includes": ["Akomodasi Tenda Glamping (Kapasitas 2-4 orang/tenda)", "Transportasi PP", "Makan Malam BBQ & Sarapan", "Tiket Masuk & Pemandian Air Panas"],
-    "excludes": ["Pengeluaran Tambahan"],
+    "includes": [
+      "Akomodasi Tenda Glamping (Kapasitas 2-4 orang/tenda)",
+      "Transportasi PP",
+      "Makan Malam BBQ & Sarapan",
+      "Tiket Masuk & Pemandian Air Panas"
+    ],
+    "excludes": [
+      "Pengeluaran Tambahan"
+    ],
     "meetingPoint": "Point Penjemputan Pilihan",
     "images": [
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop"
+      "/images/tours/tour-teaplantation-v2.jpg"
     ],
     "featured": false,
     "popularity": 90

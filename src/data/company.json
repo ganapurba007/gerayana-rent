@@ -6,7 +6,7 @@
   "contact": {
     "phone": "081234567890",
     "whatsapp": "6281234567890",
-    "email": "info@gerayana-rent.dummy",
+    "email": "info@gerayana-rent.com",
     "address": "Jl. Raya Utama No. 88, City Center, Indonesia"
   },
   "operatingHours": {
@@ -15,9 +15,9 @@
     "closeHour": 21
   },
   "social": [
-    { "name": "Instagram", "url": "https://instagram.com/dummy", "icon": "Instagram" },
-    { "name": "Facebook", "url": "https://facebook.com/dummy", "icon": "Facebook" },
-    { "name": "TikTok", "url": "https://tiktok.com/dummy", "icon": "Video" }
+    { "name": "Instagram", "url": "https://instagram.com/gerayanarent", "icon": "Instagram" },
+    { "name": "Facebook", "url": "https://facebook.com/gerayanarent", "icon": "Facebook" },
+    { "name": "TikTok", "url": "https://tiktok.com/@gerayanarent", "icon": "Video" }
   ],
   "history": [
     { "year": "2020", "title": "Awal Berdiri", "description": "Berawal dari 5 unit mobil dan 10 unit motor untuk area lokal." },

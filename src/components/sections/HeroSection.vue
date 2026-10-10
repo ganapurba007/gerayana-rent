@@ -49,12 +49,12 @@ onUnmounted(() => {
 
 <template>
   <section
-    class="relative bg-slate-900 text-white min-h-[550px] sm:min-h-[620px] flex flex-col justify-between overflow-hidden"
+    class="relative bg-slate-900 text-white min-h-[540px] sm:min-h-[580px] flex flex-col justify-between"
     @mouseenter="isPaused = true"
     @mouseleave="isPaused = false"
   >
-    <!-- Background Images with Fade Transition -->
-    <div class="absolute inset-0 z-0">
+    <!-- Background Images with Fade Transition (overflow hidden kept strictly inside background wrapper) -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
       <div
         v-for="(slide, idx) in slides"
         :key="slide.id"
@@ -77,9 +77,11 @@ onUnmounted(() => {
     <!-- Hero Headline Content -->
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-12 w-full">
       <div class="max-w-2xl">
-        <span class="inline-block px-3.5 py-1 rounded-full bg-brand-500/20 text-brand-300 border border-brand-500/30 text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-xs">
-          Gerayana Rental & Trip
-        </span>
+        <!-- Brand Eyebrow without badge pill style -->
+        <div class="text-xs sm:text-sm font-bold uppercase tracking-widest text-brand-400 mb-3 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-brand-400 inline-block"></span>
+          <span>Gerayana Rental & Trip</span>
+        </div>
 
         <Transition
           mode="out-in"
@@ -138,8 +140,8 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <!-- Embedded Search Widget overlapping hero bottom -->
-    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full -mb-16 sm:-mb-14">
+    <!-- Embedded Search Widget floating over hero bottom boundary -->
+    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full -mb-20 sm:-mb-16">
       <SearchWidget />
     </div>
   </section>

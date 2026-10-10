@@ -14,6 +14,51 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Pembersihan Teks Footer (2026-10-10)
+**Yang dikerjakan:**
+- Menghapus teks "Dummy Portfolio Project" dan keterangan "Dibuat dengan Vue 3 & Tailwind CSS" pada bagian bawah Footer (`src/components/layout/Footer.vue`).
+- Mengganti teks dengan tagline bisnis yang profesional ("Solusi Sewa Mobil, Motor & Paket Wisata Terpercaya").
+- Memperbarui alamat email dan tautan sosial media di `src/data/company.json` agar bebas dari imbuhan dummy (`info@gerayana-rent.com`).
+**File yang berubah:** `src/components/layout/Footer.vue`, `src/data/company.json`, `src/test/components.test.js`, `context/CHANGELOG.md`
+**Test:** 41 passed / 41 total
+**Docs updated:** tidak ada perubahan scope
+
+## Penghapusan Section Tentang Kami dari Beranda (2026-10-10)
+**FR terkait:** FR-2.4
+**Yang dikerjakan:**
+- Menghapus komponen `AboutSection.vue` dari halaman Beranda (`src/pages/Home.vue`) agar susunan halaman lebih padat dan langsung berfokus pada armada & paket wisata unggulan. Informasi detail profil perusahaan tetap tersedia di rute halaman khusus `/tentang`.
+**File yang berubah:** `src/pages/Home.vue`, `context/PRD.md`, `context/CHANGELOG.md`
+**Test:** 41 passed / 41 total
+**Docs updated:** PRD §9 (Amandemen)
+
+## Perbaikan Visual Beranda, Kartu Pencarian & Foto Paket Wisata (2026-10-10)
+**Yang dikerjakan:**
+- Menyesuaikan gambar Hero Banner di beranda (`home.json`) dengan foto lanskap perjalanan & road trip alam yang lebih natural dan tersimpan lokal di `public/images/home/`.
+- Menghapus style badge berbentuk kapsul/pill pada teks *eyebrow* Hero Banner ("Gerayana Rental & Trip") menjadi tipografi bersih dan minimalis.
+- Memperbaiki kartu pencarian mengambang (`SearchWidget.vue`) yang sebelumnya terpotong/tenggelam di bawah hero akibat `overflow-hidden` pada elemen `<section>`; memindahkan `overflow-hidden` hanya pada pembungkus latar belakang slide gambar, menyempurnakan bayangan elevasi kartu (`shadow-2xl ring-1 ring-slate-900/5`), serta menyesuaikan *padding* atas pada section keunggulan agar posisi mengambang kartu proporsional dan tidak bertabrakan.
+- Mengganti foto pada section Tentang Gerayana Rent (`AboutSection.vue`) dengan foto aktivitas persiapan liburan/road trip yang lebih relevan dan hangat.
+- Memperbarui seluruh foto paket wisata (`tours.json` dan `public/images/tours/`) agar sesuai dengan destinasi aslinya: Gunung Bromo sunrise, Heritage candi & sejarah lokal, Snorkeling terumbu karang laut tropis, Air terjun alami alami yang deras, dan Kebun Teh Puncak Bogor yang hijau membentang.
+**File yang berubah:** `src/data/home.json`, `src/data/tours.json`, `src/components/sections/HeroSection.vue`, `src/components/forms/SearchWidget.vue`, `src/components/sections/WhyUsSection.vue`, `src/components/sections/AboutSection.vue`, `context/CHANGELOG.md`
+**Test:** 41 passed / 41 total
+**Docs updated:** tidak ada perubahan scope
+
+## Perbaikan Tampilan & Foto Armada (2026-10-10)
+**Yang dikerjakan:**
+- Memperbarui foto seluruh 14 kendaraan (8 mobil dan 6 motor) dengan foto asli/akurat beresolusi tinggi yang tersimpan lokal di `public/images/vehicles/`, sehingga tiap kendaraan memiliki foto yang sesuai dengan nama dan modelnya (Innova Zenix, Fortuner GR Sport, Avanza, Brio RS, Xpander Cross, Alphard Transformer, Yaris Cross, Sigra, NMAX, PCX, Vespa Primavera, Vario, Scoopy, Aerox).
+- Merapikan desain `VehicleCard.vue`: menyelaraskan tinggi judul kartu (`min-h-[3rem]`) agar kartu selalu sejajar, mengelompokkan spesifikasi ke dalam panel kontras lembut (`bg-slate-50/90 border border-slate-100`), menata harga dan tombol aksi 50/50 (`Detail` dan `Pesan`) secara simetris dan lega tanpa terpotong di berbagai resolusi layar.
+- Mempercantik badge tahun, tipe kendaraan, dan label unggulan dengan tipografi yang lebih rapi dan konsisten.
+**File yang berubah:** `src/data/vehicles.json`, `src/components/vehicle/VehicleCard.vue`, `context/CHANGELOG.md`
+**Test:** 41 passed / 41 total
+**Docs updated:** tidak ada perubahan scope
+
+## Perbaikan Bug — Inisialisasi Plugin `@unhead/vue` (2026-10-10)
+**Yang dikerjakan:**
+- Memperbaiki pengimporan `createHead` dari `@unhead/vue/client` di `src/main.js` agar Vue Head plugin terdaftar dengan benar melalui `app.use(head)`.
+- Mengatasi error `injection "usehead" not found` dan unhandled exception pada `<router-view />` yang sebelumnya menyebabkan halaman utama hanya menampilkan Header & Footer tanpa konten halaman.
+**File yang berubah:** `src/main.js`, `AGENTS.md`, `context/CHANGELOG.md`
+**Test:** 41 passed / 41 total
+**Docs updated:** tidak ada perubahan scope
+
 ## Fase 8 — Halaman Informasi (Tentang, FAQ, Kontak) (2026-10-10)
 **FR terkait:** FR-7.1, FR-7.2, FR-7.3
 **Yang dikerjakan:**

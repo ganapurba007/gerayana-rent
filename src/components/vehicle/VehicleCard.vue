@@ -47,9 +47,9 @@ function handleBookNow() {
 </script>
 
 <template>
-  <Card hoverable padding="none" class="flex flex-col h-full group">
+  <Card hoverable padding="none" class="flex flex-col h-full group border border-slate-200/90 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300">
     <!-- Image & Badges Container -->
-    <div class="relative aspect-16/10 overflow-hidden bg-slate-100">
+    <div class="relative aspect-16/10 overflow-hidden bg-slate-50 border-b border-slate-100">
       <img
         :src="vehicle.images[0]"
         :alt="vehicle.name"
@@ -59,18 +59,23 @@ function handleBookNow() {
       
       <!-- Badges top left -->
       <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">
-        <Badge v-if="vehicle.featured" variant="accent">
+        <span
+          v-if="vehicle.featured"
+          class="inline-flex items-center gap-1 px-2.5 py-0.5 bg-amber-500 text-white text-[11px] font-bold rounded-full shadow-xs"
+        >
           <Zap class="w-3 h-3 fill-current" />
           <span>Unggulan</span>
-        </Badge>
-        <Badge variant="neutral">
-          <span>{{ vehicle.year }}</span>
-        </Badge>
+        </span>
+        <span
+          class="inline-flex items-center px-2 py-0.5 bg-white/90 backdrop-blur-xs text-slate-700 text-[11px] font-semibold rounded-full shadow-xs border border-slate-200/60"
+        >
+          {{ vehicle.year }}
+        </span>
       </div>
 
       <!-- Type Badge top right -->
       <div class="absolute top-3 right-3 z-10">
-        <span class="px-2.5 py-1 bg-slate-900/80 backdrop-blur-xs text-white text-xs font-semibold rounded-full capitalize">
+        <span class="px-2.5 py-0.5 bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-medium rounded-full capitalize">
           {{ vehicle.type }}
         </span>
       </div>
@@ -80,7 +85,7 @@ function handleBookNow() {
         v-if="!isAvailable"
         class="absolute inset-0 bg-slate-900/75 backdrop-blur-xs flex items-center justify-center p-4 text-center z-20"
       >
-        <div class="bg-red-500/90 text-white px-3 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-lg">
+        <div class="bg-red-500 text-white px-3 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-lg">
           <Calendar class="w-4 h-4 shrink-0" />
           <span>Tidak Tersedia di Tanggal Ini</span>
         </div>
@@ -89,59 +94,63 @@ function handleBookNow() {
 
     <!-- Content -->
     <div class="p-5 flex flex-col flex-grow">
-      <!-- Title & Category -->
-      <div class="mb-3">
-        <span class="text-xs font-semibold uppercase tracking-wider text-brand-600 block mb-1">
+      <!-- Title & Category (fixed height for alignment) -->
+      <div>
+        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-600 block mb-1">
           {{ vehicle.brand }}
         </span>
         <h3
           @click="goToDetail"
-          class="text-lg font-bold text-slate-800 group-hover:text-brand-600 transition-colors cursor-pointer line-clamp-1"
+          class="text-base font-bold text-slate-800 group-hover:text-brand-600 transition-colors cursor-pointer line-clamp-2 min-h-[3rem] leading-snug"
+          :title="vehicle.name"
         >
           {{ vehicle.name }}
         </h3>
       </div>
 
-      <!-- Specifications Grid -->
-      <div class="grid grid-cols-2 gap-2.5 py-3 border-y border-slate-100 text-xs text-slate-600 my-auto">
-        <div class="flex items-center gap-2">
+      <!-- Specifications Grid with clean soft panel -->
+      <div class="bg-slate-50/90 rounded-xl p-3 border border-slate-100 my-3 grid grid-cols-2 gap-2 text-xs text-slate-600">
+        <div class="flex items-center gap-1.5 truncate">
           <Users class="w-4 h-4 text-slate-400 shrink-0" />
-          <span>{{ vehicle.seats }} Kursi</span>
+          <span class="truncate font-medium">{{ vehicle.seats }} Kursi</span>
         </div>
 
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1.5 truncate">
           <Gauge class="w-4 h-4 text-slate-400 shrink-0" />
-          <span>{{ vehicle.transmission }}</span>
+          <span class="truncate font-medium">{{ vehicle.transmission }}</span>
         </div>
 
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1.5 truncate">
           <Fuel class="w-4 h-4 text-slate-400 shrink-0" />
-          <span>{{ vehicle.fuel }}</span>
+          <span class="truncate font-medium">{{ vehicle.fuel }}</span>
         </div>
 
-        <div class="flex items-center gap-2 truncate">
+        <div class="flex items-center gap-1.5 truncate">
           <Briefcase class="w-4 h-4 text-slate-400 shrink-0" />
-          <span class="truncate">{{ vehicle.type === 'mobil' ? (vehicle.luggage || '2 Koper') : `${vehicle.engineCc} cc` }}</span>
+          <span class="truncate font-medium">{{ vehicle.type === 'mobil' ? (vehicle.luggage || '2 Koper') : `${vehicle.engineCc} cc` }}</span>
         </div>
       </div>
 
-      <!-- Pricing & Actions -->
-      <div class="pt-4 flex items-center justify-between gap-3 mt-3">
-        <div>
-          <span class="text-[11px] text-slate-400 font-medium block leading-none mb-1">Mulai Dari</span>
+      <!-- Pricing & Actions at bottom -->
+      <div class="mt-auto pt-3 border-t border-slate-100">
+        <!-- Price Display -->
+        <div class="flex items-baseline justify-between mb-3">
+          <span class="text-[11px] text-slate-400 font-medium">Harga Sewa</span>
           <div class="flex items-baseline gap-1">
-            <span class="text-lg font-extrabold text-brand-600">
+            <span class="text-lg font-black text-brand-600 tracking-tight">
               {{ formatCurrency(vehicle.pricePerDay) }}
             </span>
             <span class="text-xs text-slate-500 font-medium">/hari</span>
           </div>
         </div>
 
-        <div class="flex items-center gap-2">
+        <!-- Action Buttons 50/50 Grid -->
+        <div class="grid grid-cols-2 gap-2">
           <Button
             variant="outline"
             size="sm"
             @click="goToDetail"
+            class="w-full font-semibold"
             title="Lihat Detail"
           >
             <span>Detail</span>
@@ -151,6 +160,7 @@ function handleBookNow() {
             size="sm"
             :disabled="!isAvailable"
             @click="handleBookNow"
+            class="w-full font-bold"
             title="Pesan Sekarang"
           >
             <span>Pesan</span>

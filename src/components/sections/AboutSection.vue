@@ -20,8 +20,8 @@ const { currentCount } = useCountUp(homeData.experienceYears || 5, isInView, 150
         <div class="relative">
           <div class="aspect-4/3 rounded-3xl overflow-hidden bg-slate-100 shadow-xl border border-slate-200">
             <img
-              src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800&auto=format&fit=crop"
-              alt="Armada Gerayana Rent"
+              src="/images/home/about-service.jpg"
+              alt="Layanan Profesional Gerayana Rent"
               class="w-full h-full object-cover"
               loading="lazy"
             />

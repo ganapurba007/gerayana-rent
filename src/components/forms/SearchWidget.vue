@@ -91,7 +91,7 @@ function handleSearch() {
 </script>
 
 <template>
-  <div :class="['bg-white rounded-2xl shadow-xl border border-slate-200/80 p-5 sm:p-6 text-slate-800', compact ? 'p-4 shadow-md' : '']">
+  <div :class="['bg-white rounded-2xl shadow-2xl shadow-slate-900/15 border border-slate-200/90 p-5 sm:p-6 text-slate-800 ring-1 ring-slate-900/5', compact ? 'p-4 shadow-md' : '']">
     <!-- Type Selection Tabs (Mobil / Motor) -->
     <div class="flex items-center gap-2 mb-5 border-b border-slate-100 pb-4">
       <button

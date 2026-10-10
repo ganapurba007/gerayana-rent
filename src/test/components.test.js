@@ -5,6 +5,7 @@ import Card from '../components/ui/Card.vue'
 import Badge from '../components/ui/Badge.vue'
 import Accordion from '../components/ui/Accordion.vue'
 import TopBar from '../components/layout/TopBar.vue'
+import companyData from '../data/company.json'
 import { useToast } from '../composables/useToast'
 
 describe('UI & Layout Components Tests', () => {
@@ -70,7 +71,7 @@ describe('UI & Layout Components Tests', () => {
 
   it('TopBar renders phone and email from company data', () => {
     const wrapper = mount(TopBar)
-    expect(wrapper.text()).toContain('081234567890')
-    expect(wrapper.text()).toContain('info@gerayana-rent.dummy')
+    expect(wrapper.text()).toContain(companyData.contact.phone)
+    expect(wrapper.text()).toContain(companyData.contact.email)
   })
 })

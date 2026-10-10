@@ -125,8 +125,8 @@ const iconMap = {
 
       <!-- Bottom Bar -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4 text-center sm:text-left">
-        <p>© 2026 {{ companyData.name }}. Dummy Portfolio Project. All Rights Reserved.</p>
-        <p class="text-slate-600">Dibuat dengan Vue 3 & Tailwind CSS</p>
+        <p>© 2026 {{ companyData.name }}. All Rights Reserved.</p>
+        <p class="text-slate-500">Solusi Sewa Mobil, Motor & Paket Wisata Terpercaya</p>
       </div>
     </div>
   </footer>

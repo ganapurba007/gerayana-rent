@@ -3,7 +3,6 @@ import { useHead } from '@unhead/vue'
 import companyData from '../data/company.json'
 import HeroSection from '../components/sections/HeroSection.vue'
 import WhyUsSection from '../components/sections/WhyUsSection.vue'
-import AboutSection from '../components/sections/AboutSection.vue'
 import FeaturedVehiclesSection from '../components/sections/FeaturedVehiclesSection.vue'
 import CategoriesSection from '../components/sections/CategoriesSection.vue'
 import FeaturedToursSection from '../components/sections/FeaturedToursSection.vue'
@@ -26,9 +25,6 @@ useHead({
 
     <!-- FR-2.3: Kenapa Memilih Kami -->
     <WhyUsSection />
-
-    <!-- FR-2.4: Tentang Kami Singkat -->
-    <AboutSection />
 
     <!-- FR-2.5: Armada Unggulan -->
     <FeaturedVehiclesSection />
