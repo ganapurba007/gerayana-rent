@@ -14,6 +14,19 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Fase 4 — Halaman Armada (Daftar, Filter URL, Ketersediaan) (2026-10-10)
+**FR terkait:** FR-3.1, FR-3.2, FR-3.3, FR-3.4, FR-3.5, FR-3.6, FR-3.7
+**Yang dikerjakan:**
+- Membuat composable `useVehicleFilters.js` untuk mengelola kriteria pencarian dan sinkronisasi otomatis ke query URL tanpa reload browser (FR-3.1 & FR-3.4)
+- Membuat komponen `VehicleFilterPanel.vue` (FR-3.3: filter kategori, transmisi, kapasitas penumpang, rentang harga)
+- Membuat `ActiveFilterChips.vue` (FR-3.4: chip filter aktif yang bisa dihapus satu per satu, counter jumlah hasil, dan pengurutan Terpopuler/Termurah/Termahal)
+- Implementasi logika pengurutan ketersediaan (FR-3.6: kendaraan yang bentrok dengan `bookedRanges` otomatis diurutkan di paling bawah dan tombol booking dinonaktifkan)
+- Membuat `EmptyState.vue` (FR-3.7: tampilan saat hasil pencarian kosong + tombol reset & tautan WhatsApp)
+- Merakit seluruh elemen pada `src/pages/Fleet.vue` dengan dukungan *responsive layout* (sidebar di desktop & `BottomSheet.vue` di mobile) dan unit test (`src/test/fleet.test.js`)
+**File yang berubah:** src/composables/useVehicleFilters.js, src/components/vehicle/*.vue, src/pages/Fleet.vue, src/test/fleet.test.js, AGENTS.md, context/CHANGELOG.md
+**Test:** 28 passed / 28 total
+**Docs updated:** tidak ada perubahan scope
+
 ## Fase 3 — Halaman Beranda & Search Widget (2026-10-10)
 **FR terkait:** FR-2.1, FR-2.2, FR-2.3, FR-2.4, FR-2.5, FR-2.6, FR-2.7, FR-2.8, FR-2.9, FR-2.10
 **Yang dikerjakan:**
