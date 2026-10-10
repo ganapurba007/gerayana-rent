@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Budi Santoso",
+    "service": "Sewa Mobil Innova Zenix",
+    "quote": "Sangat puas dengan pelayanan Gerayana Rent! Mobil Innova Zenix yang saya sewa sangat bersih, wangi, dan kondisi mesin halus sekali. Antar-jemput di stasiun tepat waktu.",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Siti Nurhaliza",
+    "service": "Sewa Motor NMAX 155",
+    "quote": "Proses booking lewat WhatsApp cepat banget, hitungan 5 menit armada langsung disiapkan. Jas hujan dan 2 helm SNI kondisinya masih sangat bersih.",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Rian Ardianto",
+    "service": "Paket Wisata Bromo Sunrise",
+    "quote": "Trip Bromo bersama Gerayana sungguh berkesan. Driver ramah, kendaraan Jeep prima di tanjakan, dan titik penjemputan sangat fleksibel dari hotel kami.",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Dewi Saraswati",
+    "service": "Sewa Mobil Avanza All New",
+    "quote": "Harga benar-benar transparan tanpa ada biaya tersembunyi saat pengembalian unit. Rekomendasi utama kalau ke kota ini!",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "bandara",
+    "name": "Bandara Internasional (Pickup Gate Terminal 1 & 2)",
+    "address": "Jl. Bandara Utama No. 1, AreaKedatangan"
+  },
+  {
+    "id": "stasiun",
+    "name": "Stasiun Kereta Utama (Area Parkir Timur)",
+    "address": "Jl. Stasiun No. 12, Pusat Kota"
+  },
+  {
+    "id": "terminal-bus",
+    "name": "Terminal Bus Terpadu",
+    "address": "Jl. Lingkar Luar No. 45"
+  },
+  {
+    "id": "kantor-pusat",
+    "name": "Garasi & Kantor Pusat Gerayana Rent",
+    "address": "Jl. Raya Utama No. 88, City Center"
+  },
+  {
+    "id": "hotel-barat",
+    "name": "Hotel / Penginapan Area Barat",
+    "address": "Antar-Jemput Langsung ke Lobby Hotel Area Barat"
+  },
+  {
+    "id": "hotel-timur",
+    "name": "Hotel / Penginapan Area Timur",
+    "address": "Antar-Jemput Langsung ke Lobby Hotel Area Timur"
+  }
+]

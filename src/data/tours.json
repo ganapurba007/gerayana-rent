@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "slug": "paket-wisata-bromo-sunrise-2h1m",
+    "title": "Exotic Bromo Sunrise & Crater Adventure",
+    "destinations": ["Penanjakan Sunrise", "Kawah Bromo", "Pasir Berbisik", "Bukit Teletubbies"],
+    "durationDays": 2,
+    "durationNights": 1,
+    "summary": "Menikmati pemandangan matahari terbit legendaris di Bromo dan menjelajahi lautan pasir dengan Jeep 4x4.",
+    "description": "Pengalaman luar biasa melihat matahari terbit dari puncak Penanjakan, dilanjutkan penjelajahan Kawah Bromo, Pasir Berbisik, serta hamparan sabana hijau Bukit Teletubbies.",
+    "minPax": 2,
+    "maxPax": 12,
+    "priceTiers": [
+      { "minPax": 2, "maxPax": 4, "pricePerPerson": 850000 },
+      { "minPax": 5, "maxPax": 8, "pricePerPerson": 650000 },
+      { "minPax": 9, "maxPax": 12, "pricePerPerson": 500000 }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Penjemputan & Perjalanan ke Basecamp Bromo",
+        "activities": [
+          "Penjemputan peserta di lokasi meeting point (00:30 WIB)",
+          "Perjalanan ke titik transit Jeep 4x4",
+          "Istirahat sejenak dan pembagian perlengkapan hangat"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Golden Sunrise & Penjelajahan Kawasan Bromo",
+        "activities": [
+          "Menuju View Point Penanjakan untuk menyaksikan Golden Sunrise (04:00 WIB)",
+          "Menuju Kawah Bromo & Pura Luhur Poten",
+          "Eksplorasi foto di Pasir Berbisik & Bukit Teletubbies Sabana",
+          "Kembali ke titik kumpul & diantar kembali ke lokasi awal (13:00 WIB)"
+        ]
+      }
+    ],
+    "includes": ["Sewa Jeep 4x4", "Tiket Masuk Taman Nasional", "Driver & BBM", "Snack & Air Mineral", "Dokumentasi Foto"],
+    "excludes": ["Sewa Kuda di Bromo", "Pengeluaran Pribadi", "Makan Siang / Malam Tambahan"],
+    "meetingPoint": "Stasiun / Bandara / Hotel Area Kota",
+    "images": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 99
+  },
+  {
+    "id": 2,
+    "slug": "city-tour-heritage-culinary-1d",
+    "title": "City Tour Heritage & Culinary Day Trip",
+    "destinations": ["Kawasan Kota Tua", "Museum Sejarah", "Pusat Kuliner Lokal", "Sentra Oleh-Oleh"],
+    "durationDays": 1,
+    "durationNights": 0,
+    "summary": "Jelajah pesona sejarah kota, bangunan kolonial ikonik, dan santap kuliner legendaris dalam 1 hari.",
+    "description": "Tur privat santai yang dirancang untuk menikmati keindahan bangunan bersejarah, spot foto estetik, serta mencicipi aneka jajanan dan makanan khas.",
+    "minPax": 2,
+    "maxPax": 10,
+    "priceTiers": [
+      { "minPax": 2, "maxPax": 4, "pricePerPerson": 350000 },
+      { "minPax": 5, "maxPax": 10, "pricePerPerson": 250000 }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Eksplorasi Sejarah & Kuliner Seharian",
+        "activities": [
+          "Penjemputan di hotel / stasiun (08:00 WIB)",
+          "Mengunjungi Kawasan Heritage Kota Tua & spot foto sejarah",
+          "Makan siang di restoran kuliner legendaris khas lokal",
+          "Kunjungan ke museum & pusat kerajinan tangan",
+          "Berbelanja oleh-oleh dan diantar kembali ke lokasi awal (17:00 WIB)"
+        ]
+      }
+    ],
+    "includes": ["Mobil AC Privata + Driver Professional", "BBM & Parkir", "Tiket Masuk Objek Wisata", "1x Makan Siang Khas"],
+    "excludes": ["Belanja Pribadi / Oleh-oleh", "Tips Guide/Driver"],
+    "meetingPoint": "Lobby Hotel / Stasiun / Bandara",
+    "images": [
+      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 93
+  },
+  {
+    "id": 3,
+    "slug": "exotic-beach-snorkeling-3h2m",
+    "title": "Exotic Beach & Snorkeling Escape 3H2M",
+    "destinations": ["Pantai Pasir Putih", "Taman Laut Snorkeling", "Tebing Sunset Point", "Kampung Nelayan"],
+    "durationDays": 3,
+    "durationNights": 2,
+    "summary": "Pengalaman pantai eksotis lengkap dengan agenda snorkeling laut dangkal dan panorama sunset spektakuler.",
+    "description": "Paket liburan pantai terlengkap selama 3 hari 2 malam. Nikmati pesona terumbu karang laut dangkal, sunset di atas tebing karang, serta sajian seafood segar di tepi pantai.",
+    "minPax": 4,
+    "maxPax": 15,
+    "priceTiers": [
+      { "minPax": 4, "maxPax": 6, "pricePerPerson": 1450000 },
+      { "minPax": 7, "maxPax": 10, "pricePerPerson": 1200000 },
+      { "minPax": 11, "maxPax": 15, "pricePerPerson": 980000 }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Kedatangan & Sunset Beach",
+        "activities": [
+          "Penjemputan & check-in resort pantai",
+          "Relaksasi & menikmati sunset di Tebing Sunset Point",
+          "Makan malam BBQ Seafood di tepi pantai"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Snorkeling Tour & Island Hopping",
+        "activities": [
+          "Sarapan pagi di resort",
+          "Penjelajahan kapal perahu ke spot snorkeling spot terumbu karang",
+          "Makan siang di pulau kecil tak berpenghuni",
+          "Foto bawah air bersama ikan-ikan karang"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Belanja Souvenir & Kepulangan",
+        "activities": [
+          "Sarapan & check-out resort",
+          "Mampir ke pasar kerajinan nelayan lokal",
+          "Pengantaran kembali ke bandara / stasiun"
+        ]
+      }
+    ],
+    "includes": ["Akomodasi Resort 2 Malam (Sharing Bed)", "Perahu Snorkeling & Alat Lengkap", "Makan 5x Sesuai Program", "Pemandu Lokal & Foto Underwater"],
+    "excludes": ["Tiket Pesawat/Kereta ke Kota", "Pengeluaran Pribadi"],
+    "meetingPoint": "Bandara Utama / Stasiun Kota",
+    "images": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 95
+  },
+  {
+    "id": 4,
+    "slug": "nature-waterfall-adventure-1d",
+    "title": "Nature & Waterfall Trekking Adventure 1D",
+    "destinations": ["Air Terjun Bertingkat", "Hutan Pinus", "Spot Foto Sky Bridge"],
+    "durationDays": 1,
+    "durationNights": 0,
+    "summary": "Trekking ringan menyusuri hutan pinus sejuk dan bermain air segar di bawah air terjun alami.",
+    "description": "Bagi Anda pecinta udara segar dan lanskap alam hijau, petualangan trekking ini menyajikan udara sejuk pegunungan dan pesona air terjun tersembunyi yang menyegarkan pikiran.",
+    "minPax": 2,
+    "maxPax": 8,
+    "priceTiers": [
+      { "minPax": 2, "maxPax": 4, "pricePerPerson": 300000 },
+      { "minPax": 5, "maxPax": 8, "pricePerPerson": 220000 }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Trekking & Wisata Air Terjun",
+        "activities": [
+          "Penjemputan pagi (07:30 WIB) & perjalanan menuju area pegunungan",
+          "Trekking santai 30 menit menyusuri Hutan Pinus",
+          "Eksplorasi & berenang di kolam alami Air Terjun",
+          "Makan siang prasmanan khas saung bambu",
+          "Foto di Sky Bridge spot pandang lembah",
+          "Kembali ke kota (16:00 WIB)"
+        ]
+      }
+    ],
+    "includes": ["Transportasi AC PP", "Local Guide Trekking", "Tiket Masuk Wisata", "1x Makan Siang Khas Saung"],
+    "excludes": ["Pakaian Ganti", "Pengeluaran Pribadi"],
+    "meetingPoint": "Kota Center / Hotel Peserta",
+    "images": [
+      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": false,
+    "popularity": 87
+  },
+  {
+    "id": 5,
+    "slug": "highland-tea-plantation-2h1m",
+    "title": "Highland Tea Plantation & Glamping 2H1M",
+    "destinations": ["Kebun Teh Dataran Tinggi", "Area Glamping", "Danau Alami", "Pemandian Air Panas"],
+    "durationDays": 2,
+    "durationNights": 1,
+    "summary": "Menginap di tenda glamping mewah di tengah kebun teh hijau lengkap dengan sesi api unggun.",
+    "description": "Rasakan pengalaman menginap unik berkonsep Glamping (Glamorous Camping) di pegunungan berhawa dingin. Dilengkapi fasilitas kasur empuk, air hangat, api unggun malam hari, dan jalan pagi di kebun teh.",
+    "minPax": 2,
+    "maxPax": 10,
+    "priceTiers": [
+      { "minPax": 2, "maxPax": 4, "pricePerPerson": 950000 },
+      { "minPax": 5, "maxPax": 10, "pricePerPerson": 750000 }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Check-in Glamping & Api Unggun",
+        "activities": [
+          "Penjemputan siang (12:00 WIB) & menuju kawasan pegunungan",
+          "Check-in Tenda Glamping Luxury",
+          "Sore hari mengunjungi Pemandian Air Panas Alami",
+          "Makan malam BBQ & Sesi Api Unggun di area camp"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Tea Walk & Perjalanan Pulang",
+        "activities": [
+          "Jalan pagi Tea Walk menyusuri kebun teh sambil menikmati sunrise",
+          "Sarapan hangat di resto area kebun teh",
+          "Check-out & perjalanan kembali ke lokasi jemput (12:00 WIB)"
+        ]
+      }
+    ],
+    "includes": ["Akomodasi Tenda Glamping (Kapasitas 2-4 orang/tenda)", "Transportasi PP", "Makan Malam BBQ & Sarapan", "Tiket Masuk & Pemandian Air Panas"],
+    "excludes": ["Pengeluaran Tambahan"],
+    "meetingPoint": "Point Penjemputan Pilihan",
+    "images": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": false,
+    "popularity": 90
+  }
+]

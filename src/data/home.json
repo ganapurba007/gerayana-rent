@@ -1,0 +1,51 @@
+{
+  "heroSlides": [
+    {
+      "id": 1,
+      "headline": "Jelajahi Kota & Alam Tanpa Batas",
+      "subheadline": "Sewa mobil dan motor prima dengan harga jujur, transparan, dan proses pemesanan praktis lewat WhatsApp.",
+      "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "id": 2,
+      "headline": "Nikmati Momen Liburan Tak Terlupakan",
+      "subheadline": "Paket wisata pilihan dengan itinerary lengkap, driver berpengalaman, dan armada paling nyaman.",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "id": 3,
+      "headline": "Armada Terawat & Bebas Khawatir",
+      "subheadline": "Setiap unit rutin diservis dan diservis berkala. Antar-jemput tepat waktu di lokasi pilihan Anda.",
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop"
+    }
+  ],
+  "benefits": [
+    {
+      "icon": "Zap",
+      "title": "Pesan Mudah & Cepat",
+      "description": "Cari unit, pilih tanggal, dan langsung konfirmasi pesanan lewat WhatsApp dalam waktu kurang dari 2 menit."
+    },
+    {
+      "icon": "MapPin",
+      "title": "Banyak Titik Antar-Jemput",
+      "description": "Kami melayani antar-jemput armada di bandara, stasiun, hotel, hingga lokasi kustom yang Anda tentukan."
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Unit Prima & Terawat",
+      "description": "Seluruh kendaraan melewati inspeksi rutin, bersih, wangi, dan dalam kondisi mesin 100% siap jalan."
+    }
+  ],
+  "aboutPoints": [
+    "Jaminan harga tertransparan tanpa biaya tersembunyi saat pengembalian",
+    "Pilihan armada terbaru keluaran tahun 2021 hingga 2024",
+    "Layanan bantuan darurat dan antaran 24/7 di seluruh area operasional",
+    "Driver profesional, ramah, dan menguasai rute wisata populer"
+  ],
+  "experienceYears": 5,
+  "stats": [
+    { "label": "Unit Kendaraan Disewakan", "value": 45, "suffix": "+" },
+    { "label": "Destinasi Wisata Pilihan", "value": 18, "suffix": " Paket" },
+    { "label": "Pelanggan Puas", "value": 2500, "suffix": "+" }
+  ]
+}

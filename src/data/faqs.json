@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "category": "Syarat Sewa",
+    "question": "Apa saja dokumen yang diperlukan untuk menyewa kendaraan lepas kunci?",
+    "answer": "Untuk sewa lepas kunci, Anda perlu menyiapkan foto KTP asli, SIM A (untuk mobil) atau SIM C (untuk motor) yang masih berlaku, serta tangkapan layar akun media sosial aktif atau bukti pemesanan tiket penerbangan/hotel sebagai verifikasi."
+  },
+  {
+    "id": 2,
+    "category": "Syarat Sewa",
+    "question": "Berapa usia minimal penyewa kendaraan?",
+    "answer": "Penyewa minimal berusia 18 tahun untuk sewa motor dan 21 tahun untuk sewa mobil lepas kunci."
+  },
+  {
+    "id": 3,
+    "category": "Syarat Sewa",
+    "question": "Apakah penyewa dari luar kota atau wisatawan asing diperbolehkan menyewa?",
+    "answer": "Tentu saja! Kami sangat menyambut wisatawan luar kota maupun mancanegara. Cukup sertakan foto Paspor / KTP dan bukti menginap di hotel/resort area setempat."
+  },
+  {
+    "id": 4,
+    "category": "Pembayaran & Deposit",
+    "question": "Bagaimana sistem pembayaran sewa kendaraan?",
+    "answer": "Pembayaran dilakukan langsung saat serah terima unit di lokasi penjemputan (COD) atau via transfer bank resmi. Tidak ada pembayaran kartu kredit di website ini."
+  },
+  {
+    "id": 5,
+    "category": "Pembayaran & Deposit",
+    "question": "Mengapa ada uang deposit dan kapan deposit dikembalikan?",
+    "answer": "Uang deposit digunakan sebagai jaminan jikalau ada tilang elektronik (ETLE) atau kerusakan akibat kelalaian selama masa sewa. Deposit akan dikembalikan penuh maksimal 1x24 jam setelah unit dikembalikan dalam keadaan aman."
+  },
+  {
+    "id": 6,
+    "category": "Pembayaran & Deposit",
+    "question": "Apakah ada biaya tambahan jika terjadi keterlambatan pengembalian unit?",
+    "answer": "Keterlambatan hingga 1 jam tidak dikenakan biaya. Toleransi keterlambatan di atas 1 jam akan dikenakan overtime fee sebesar 10% per jam dari tarif harian, atau dihitung 1 hari penuh jika lebih dari 5 jam."
+  },
+  {
+    "id": 7,
+    "category": "Antar-Jemput",
+    "question": "Apakah ada fasilitas antar-jemput armada ke lokasi tempat saya menginap?",
+    "answer": "Ya! Kami menyediakan fasilitas antar-jemput armada gratis di area kota, bandara, stasiun kereta, serta hotel-hotel utama pada jam operasional (07:00 - 21:00 WIB)."
+  },
+  {
+    "id": 8,
+    "category": "Antar-Jemput",
+    "question": "Apakah bisa melakukan serah terima unit di luar jam operasional (malam/subuh)?",
+    "answer": "Bisa dengan pemberitahuan minimal 1 hari sebelumnya. Pengantaran atau penjemputan di luar jam operasional (21:00 - 07:00 WIB) akan dikenakan biaya operasional piket malam sebesar Rp 35.000."
+  },
+  {
+    "id": 9,
+    "category": "Antar-Jemput",
+    "question": "Di mana titik serah terima armada di bandara?",
+    "answer": "Petugas kami akan menunggu Anda di pintu keluar kedatangan (Pickup Gate Terminal) membawa papan nama pemesan."
+  },
+  {
+    "id": 10,
+    "category": "Paket Wisata",
+    "question": "Apakah paket wisata bisa disesuaikan (custom itinerary)?",
+    "answer": "Sangat bisa! Jika Anda memiliki daftar destinasi impian sendiri, tim kami siap menyusunkan itinerary dan perhitungan harga terbaik melalui konsultasi WhatsApp."
+  },
+  {
+    "id": 11,
+    "category": "Paket Wisata",
+    "question": "Apakah paket wisata sudah termasuk konsumsi dan tiket masuk objek wisata?",
+    "answer": "Mayoritas paket wisata kami sudah mencakup tiket masuk seluruh objek wisata utama yang tertera di itinerary, tiket Jeep (untuk tur Bromo), serta beberapa kali makan. Rincian lengkap ada di bagian 'Sudah Termasuk' pada halaman detail paket."
+  },
+  {
+    "id": 12,
+    "category": "Paket Wisata",
+    "question": "Bagaimana jika cuaca buruk saat jadwal tour berlangsung?",
+    "answer": "Keselamatan Anda adalah prioritas kami. Jika terjadi cuaca ekstrem yang membahayakan (misal badai atau penutupan kawasan wisata oleh pengelola), kami akan menyesuaikan urutan destinasi atau menawarkan opsi reschedule."
+  }
+]

@@ -1,0 +1,404 @@
+[
+  {
+    "id": 1,
+    "slug": "toyota-innova-zenix-2023",
+    "type": "mobil",
+    "name": "Toyota Innova Zenix Hybrid",
+    "brand": "Toyota",
+    "category": "mpv",
+    "year": 2023,
+    "seats": 7,
+    "transmission": "Otomatis",
+    "fuel": "Bensin Hybrid",
+    "luggage": "3 Koper Besar",
+    "pricePerDay": 650000,
+    "driverPerDay": 200000,
+    "extras": [
+      { "id": "child-seat", "label": "Kursi Bayi / Child Seat", "pricePerDay": 50000 },
+      { "id": "roof-rack", "label": "Roof Rack Ekstra", "pricePerDay": 40000 }
+    ],
+    "deposit": 500000,
+    "features": ["AC Dual Zone", "Sunroof", "Captain Seat", "Bluetooth & Apple CarPlay", "Kamera 360", "USB Charger Per Baris"],
+    "includes": ["Asuransi All-Risk Dummy", "Servis Teratur", "Peralatan Darurat & Ban Serep"],
+    "excludes": ["Bensin / BBM", "Tol & Parkir", "Akomodasi Driver (jika luar kota)"],
+    "description": "Innova Zenix Hybrid menyajikan efisiensi bahan bakar maksimal dan kenyamanan kabin luar biasa untuk perjalanan keluarga maupun keperluan bisnis.",
+    "images": [
+      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 98,
+    "bookedRanges": [
+      { "from": "2026-10-15", "to": "2026-10-18" }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "toyota-avanza-tsi-2022",
+    "type": "mobil",
+    "name": "Toyota Avanza All New",
+    "brand": "Toyota",
+    "category": "mpv",
+    "year": 2022,
+    "seats": 7,
+    "transmission": "Manual",
+    "fuel": "Bensin",
+    "luggage": "2 Koper Sedang",
+    "pricePerDay": 350000,
+    "driverPerDay": 150000,
+    "extras": [
+      { "id": "child-seat", "label": "Kursi Bayi / Child Seat", "pricePerDay": 50000 }
+    ],
+    "deposit": 300000,
+    "features": ["AC Double Blower", "Audio Touchscreen", "Power Outlet", "Sensor Parkir Belakang"],
+    "includes": ["Servis Teratur", "Peralatan Darurat"],
+    "excludes": ["BBM", "E-Toll & Parkir"],
+    "description": "Kendaraan keluarga paling diminati di Indonesia dengan konsumsi BBM irit dan performa handal di berbagai medan.",
+    "images": [
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 95,
+    "bookedRanges": []
+  },
+  {
+    "id": 3,
+    "slug": "honda-brio-rs-2023",
+    "type": "mobil",
+    "name": "Honda Brio RS CVT",
+    "brand": "Honda",
+    "category": "city-car",
+    "year": 2023,
+    "seats": 5,
+    "transmission": "Otomatis",
+    "fuel": "Bensin",
+    "luggage": "2 Koper Kecil",
+    "pricePerDay": 300000,
+    "driverPerDay": 150000,
+    "extras": [],
+    "deposit": 300000,
+    "features": ["Lampu LED", "Layar Sentuh 7 Inchi", "Power Steering", "Rem ABS + EBD"],
+    "includes": ["Servis Rutin", "Sanitasi Kebersihan Unit"],
+    "excludes": ["BBM", "Parkir"],
+    "description": "Lincah di jalanan perkotaan yang padat, sangat pas untuk perjalanan singkat bersama teman atau pasangan.",
+    "images": [
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 92,
+    "bookedRanges": [
+      { "from": "2026-10-12", "to": "2026-10-14" }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "mitsubishi-xpander-cross-2023",
+    "type": "mobil",
+    "name": "Mitsubishi Xpander Cross Premium",
+    "brand": "Mitsubishi",
+    "category": "compact-mpv",
+    "year": 2023,
+    "seats": 7,
+    "transmission": "Otomatis",
+    "fuel": "Bensin",
+    "luggage": "3 Koper Sedang",
+    "pricePerDay": 450000,
+    "driverPerDay": 175000,
+    "extras": [
+      { "id": "roof-rack", "label": "Roof Rack Ekstra", "pricePerDay": 40000 }
+    ],
+    "deposit": 400000,
+    "features": ["Ground Clearance Tinggi", "Kamera 360", "Wireless Charger", "Cruise Control", "Jok Kulit Synthesis"],
+    "includes": ["Asuransi Dasar", "Servis Berkala"],
+    "excludes": ["BBM", "Biaya Tol"],
+    "description": "Kombinasi ketangguhan SUV dan kenyamanan MPV, siap menemani petualangan luar kota Anda.",
+    "images": [
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": false,
+    "popularity": 88,
+    "bookedRanges": []
+  },
+  {
+    "id": 5,
+    "slug": "toyota-fortuner-gr-2023",
+    "type": "mobil",
+    "name": "Toyota Fortuner GR Sport 4x2",
+    "brand": "Toyota",
+    "category": "suv",
+    "year": 2023,
+    "seats": 7,
+    "transmission": "Otomatis",
+    "fuel": "Diesel",
+    "luggage": "4 Koper Besar",
+    "pricePerDay": 850000,
+    "driverPerDay": 250000,
+    "extras": [
+      { "id": "child-seat", "label": "Kursi Bayi / Child Seat", "pricePerDay": 50000 }
+    ],
+    "deposit": 1000000,
+    "features": ["Mesin 2.8L Powerful", "Interior Premium Black Leather", "Power Backdoor", "Paddle Shift"],
+    "includes": ["Asuransi All-Risk Dummy", "Servis Rutin"],
+    "excludes": ["BBM Diesel / Dex", "Tol & Parkir"],
+    "description": "SUV bertenaga besar dengan tampilan gagah, ideal untuk perjalanan antar kota dan medan menantang.",
+    "images": [
+      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 96,
+    "bookedRanges": []
+  },
+  {
+    "id": 6,
+    "slug": "toyota-alphard-transformer-2022",
+    "type": "mobil",
+    "name": "Toyota Alphard G Transformer",
+    "brand": "Toyota",
+    "category": "luxury",
+    "year": 2022,
+    "seats": 7,
+    "transmission": "Otomatis",
+    "fuel": "Bensin",
+    "luggage": "4 Koper Besar",
+    "pricePerDay": 1800000,
+    "driverPerDay": 300000,
+    "extras": [],
+    "deposit": 1500000,
+    "features": ["Pilot Seats", "Power Sliding Door", "Ambient Lighting", "JBL Premium Audio", "Rear Seat Entertainment"],
+    "includes": ["Asuransi VIP", "Perawatan Harian"],
+    "excludes": ["BBM", "Tol & Operasional Driver"],
+    "description": "Kemewahan dan prestige berkelas tinggi untuk menyambut tamu VIP, pernikahan, atau kunjungan eksekutif.",
+    "images": [
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": false,
+    "popularity": 90,
+    "bookedRanges": []
+  },
+  {
+    "id": 7,
+    "slug": "toyota-yaris-cross-2024",
+    "type": "mobil",
+    "name": "Toyota Yaris Cross Hybrid",
+    "brand": "Toyota",
+    "category": "suv",
+    "year": 2024,
+    "seats": 5,
+    "transmission": "Otomatis",
+    "fuel": "Bensin Hybrid",
+    "luggage": "2 Koper Sedang",
+    "pricePerDay": 500000,
+    "driverPerDay": 175000,
+    "extras": [],
+    "deposit": 400000,
+    "features": ["Panoramic Glass Roof", "Toyota Safety Sense", "Head Unit 10.1 Inchi", "Irit BBM Hybrid"],
+    "includes": ["Servis Rutin", "Peralatan Serep"],
+    "excludes": ["BBM", "E-Toll"],
+    "description": "Crossover modern yang memadukan desain stylish, fitur keselamatan canggih, dan konsumsi bahan bakar yang sangat hemat.",
+    "images": [
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": false,
+    "popularity": 85,
+    "bookedRanges": []
+  },
+  {
+    "id": 8,
+    "slug": "daihatsu-sigra-2023",
+    "type": "mobil",
+    "name": "Daihatsu Sigra Deluxe",
+    "brand": "Daihatsu",
+    "category": "mpv",
+    "year": 2023,
+    "seats": 7,
+    "transmission": "Manual",
+    "fuel": "Bensin",
+    "luggage": "2 Koper Kecil",
+    "pricePerDay": 280000,
+    "driverPerDay": 150000,
+    "extras": [],
+    "deposit": 250000,
+    "features": ["AC Air Circulator", "Head Unit 2-DIN", "Sensor Parkir"],
+    "includes": ["Servis Rutin"],
+    "excludes": ["BBM", "Tol"],
+    "description": "Pilihan paling hemat anggaran bagi rombongan keluarga kecil atau rombongan kerja singkat.",
+    "images": [
+      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": false,
+    "popularity": 80,
+    "bookedRanges": []
+  },
+  {
+    "id": 9,
+    "slug": "yamaha-nmax-155-2023",
+    "type": "motor",
+    "name": "Yamaha All New NMAX 155 Connected",
+    "brand": "Yamaha",
+    "category": "matic",
+    "year": 2023,
+    "seats": 2,
+    "transmission": "Otomatis",
+    "fuel": "Bensin",
+    "engineCc": 155,
+    "pricePerDay": 120000,
+    "extras": [
+      { "id": "extra-helmet", "label": "Helm Ekstra SNI", "pricePerDay": 15000 },
+      { "id": "raincoat", "label": "Jas Hujan Premium", "pricePerDay": 10000 }
+    ],
+    "deposit": 100000,
+    "features": ["Bagasi Luas 24L", "Smart Key System", "Sub-tank Suspension", "Rem ABS Front & Rear", "Y-Connect"],
+    "includes": ["2 Helm SNI Standar", "1 Jas Hujan", "Servis Berkala"],
+    "excludes": ["Bensin"],
+    "description": "Skuter matik gambot terpopuler dengan posisi duduk rileks, bagasi super luas, dan mesin 155cc bertenaga VVA.",
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 97,
+    "bookedRanges": [
+      { "from": "2026-10-20", "to": "2026-10-22" }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "honda-pcx-160-2023",
+    "type": "motor",
+    "name": "Honda PCX 160 ABS",
+    "brand": "Honda",
+    "category": "matic",
+    "year": 2023,
+    "seats": 2,
+    "transmission": "Otomatis",
+    "fuel": "Bensin",
+    "engineCc": 160,
+    "pricePerDay": 130000,
+    "extras": [
+      { "id": "extra-helmet", "label": "Helm Ekstra SNI", "pricePerDay": 15000 },
+      { "id": "raincoat", "label": "Jas Hujan Premium", "pricePerDay": 10000 }
+    ],
+    "deposit": 100000,
+    "features": ["Mesin eSP+ 160cc 4-Valve", "HSTC (Selectable Torque Control)", "USB Power Charger", "Bagasi 30 Liter"],
+    "includes": ["2 Helm SNI", "1 Jas Hujan"],
+    "excludes": ["BBM"],
+    "description": "Desain mewah dan elegan dengan performa halus, sangat cocok untuk menjelajah sudut kota hingga area wisata.",
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 94,
+    "bookedRanges": []
+  },
+  {
+    "id": 11,
+    "slug": "vespa-primavera-150-2022",
+    "type": "motor",
+    "name": "Vespa Primavera 150 i-Get ABS",
+    "brand": "Vespa",
+    "category": "retro",
+    "year": 2022,
+    "seats": 2,
+    "transmission": "Otomatis",
+    "fuel": "Bensin",
+    "engineCc": 150,
+    "pricePerDay": 200000,
+    "extras": [
+      { "id": "extra-helmet", "label": "Helm Retro Ekstra", "pricePerDay": 20000 }
+    ],
+    "deposit": 200000,
+    "features": ["Ikonik Desain Klasik", "Lampu LED Oval", "Vespa Bodi Baja Premium", "Sistem Rem ABS"],
+    "includes": ["2 Helm Retro Matching", "Jas Hujan"],
+    "excludes": ["BBM"],
+    "description": "Gaya berkendara klasik nan estetik. Sempurna bagi Anda yang mengutamakan penampilan saat berlibur dan berfoto.",
+    "images": [
+      "https://images.unsplash.com/photo-1525160354320-d8e92641c563?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": true,
+    "popularity": 91,
+    "bookedRanges": []
+  },
+  {
+    "id": 12,
+    "slug": "honda-vario-160-2023",
+    "type": "motor",
+    "name": "Honda Vario 160 CBS",
+    "brand": "Honda",
+    "category": "matic",
+    "year": 2023,
+    "seats": 2,
+    "transmission": "Otomatis",
+    "fuel": "Bensin",
+    "engineCc": 160,
+    "pricePerDay": 90000,
+    "extras": [
+      { "id": "extra-helmet", "label": "Helm Ekstra SNI", "pricePerDay": 15000 }
+    ],
+    "deposit": 100000,
+    "features": ["Desain Sporty Compact", "Combi Brake System", "Panelmeter Full Digital"],
+    "includes": ["2 Helm SNI", "Jas Hujan"],
+    "excludes": ["BBM"],
+    "description": "Lincah, bertenaga, dan ekonomis untuk mobilitas harian mengelilingi tempat-tempat populer.",
+    "images": [
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": false,
+    "popularity": 86,
+    "bookedRanges": []
+  },
+  {
+    "id": 13,
+    "slug": "honda-scoopy-prestige-2023",
+    "type": "motor",
+    "name": "Honda Scoopy Prestige Smart Key",
+    "brand": "Honda",
+    "category": "retro",
+    "year": 2023,
+    "seats": 2,
+    "transmission": "Otomatis",
+    "fuel": "Bensin",
+    "engineCc": 110,
+    "pricePerDay": 85000,
+    "extras": [
+      { "id": "extra-helmet", "label": "Helm Ekstra SNI", "pricePerDay": 15000 }
+    ],
+    "deposit": 100000,
+    "features": ["Smart Key System", "Pengecasan USB Direct", "Lampu LED Projector"],
+    "includes": ["2 Helm SNI", "Jas Hujan"],
+    "excludes": ["BBM"],
+    "description": "Motor matik bertema klasik modis dengan konsumsi bensin yang amat sangat irit.",
+    "images": [
+      "https://images.unsplash.com/photo-1525160354320-d8e92641c563?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": false,
+    "popularity": 83,
+    "bookedRanges": []
+  },
+  {
+    "id": 14,
+    "slug": "yamaha-aerox-155-2023",
+    "type": "motor",
+    "name": "Yamaha Aerox 155 CyberCity",
+    "brand": "Yamaha",
+    "category": "sport",
+    "year": 2023,
+    "seats": 2,
+    "transmission": "Otomatis",
+    "fuel": "Bensin",
+    "engineCc": 155,
+    "pricePerDay": 115000,
+    "extras": [
+      { "id": "extra-helmet", "label": "Helm Ekstra SNI", "pricePerDay": 15000 }
+    ],
+    "deposit": 100000,
+    "features": ["Karakter Motor Sport Matic", "Ban Tubeless Lebar", "Spedometer Digital Futuristik"],
+    "includes": ["2 Helm SNI", "Jas Hujan"],
+    "excludes": ["BBM"],
+    "description": "Tampilan agresif khas super sport scooter untuk Anda yang menyukai karakter responsif.",
+    "images": [
+      "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+    ],
+    "featured": false,
+    "popularity": 89,
+    "bookedRanges": []
+  }
+]
