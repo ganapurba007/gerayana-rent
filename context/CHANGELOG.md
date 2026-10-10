@@ -14,6 +14,15 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Pemisahan Menu Navigasi Sewa Mobil & Sewa Motor (2026-10-10)
+**Yang dikerjakan:**
+- Memisahkan dropdown menu "Armada" menjadi dua menu langsung di bilah navigasi utama (Navbar): **"Sewa Mobil"** (`/armada?type=mobil`) dan **"Sewa Motor"** (`/armada?type=motor`), baik pada tampilan desktop maupun drawer navigasi mobile.
+- Menghapus item navigasi "Semua Armada" yang redundant karena rute dasar `/armada` secara default sudah menampilkan filter mobil, sehingga langsung membedakan dan mempermudah akses pengguna tanpa dropdown tersembunyi.
+- Memperbarui helper status aktif tautan (`isLinkActive`) agar menu "Sewa Mobil" dan "Sewa Motor" memiliki penanda visual aktif yang akurat berdasarkan `route.query.type`.
+**File yang berubah:** `src/components/layout/Navbar.vue`, `context/CHANGELOG.md`
+**Test:** 41 passed / 41 total
+**Docs updated:** tidak ada perubahan scope
+
 ## Pembersihan Teks Footer (2026-10-10)
 **Yang dikerjakan:**
 - Menghapus teks "Dummy Portfolio Project" dan keterangan "Dibuat dengan Vue 3 & Tailwind CSS" pada bagian bawah Footer (`src/components/layout/Footer.vue`).
