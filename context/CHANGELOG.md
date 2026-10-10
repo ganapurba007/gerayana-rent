@@ -14,6 +14,18 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Fase 5 — Detail Armada & Panel Harga (2026-10-10)
+**FR terkait:** FR-4.1, FR-4.2, FR-4.3, FR-4.4, FR-4.5, FR-4.6, FR-4.7
+**Yang dikerjakan:**
+- Membuat composable `useBookingDraft.js` untuk manajemen penyimpanan draft pesanan di `sessionStorage`
+- Membuat komponen `VehicleGallery.vue` (FR-4.1: galeri foto utama & pemilih thumbnail)
+- Membuat `VehiclePricePanel.vue` (FR-4.2, FR-4.4, FR-4.5: pemilih tanggal & lokasi, slot jam penjemputan, opsi driver & layanan tambahan, kalkulasi total estimasi dengan rincian, peringatan bentrok `bookedRanges`, serta bar CTA melayang tetap pada mobile)
+- Merakit `src/pages/VehicleDetail.vue` (FR-4.1: spesifikasi lengkap & fitur, FR-4.3: daftar 'Sudah/Belum termasuk', deposit dummy, & syarat sewa ringkas, FR-4.6: section armada serupa max 3 unit, FR-4.7: fallback 404 jika slug tidak ditemukan)
+- Menulis unit test untuk galeri, kalkulasi panel harga, dan storage draft (`src/test/vehicleDetail.test.js`)
+**File yang berubah:** src/composables/useBookingDraft.js, src/components/vehicle/VehicleGallery.vue, src/components/vehicle/VehiclePricePanel.vue, src/pages/VehicleDetail.vue, src/test/vehicleDetail.test.js, AGENTS.md, context/CHANGELOG.md
+**Test:** 31 passed / 31 total
+**Docs updated:** tidak ada perubahan scope
+
 ## Fase 4 — Halaman Armada (Daftar, Filter URL, Ketersediaan) (2026-10-10)
 **FR terkait:** FR-3.1, FR-3.2, FR-3.3, FR-3.4, FR-3.5, FR-3.6, FR-3.7
 **Yang dikerjakan:**
