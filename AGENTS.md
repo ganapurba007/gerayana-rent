@@ -8,9 +8,9 @@
 **Stack:** Vue 3 (Vite, Composition API), Vue Router, Tailwind CSS, VeeValidate + Zod, data dummy JSON lokal (tanpa backend/database/pembayaran), Vitest + Vue Test Utils
 
 ## Status Saat Ini
-- **Fase aktif:** Fase 7 — Pemesanan 3 Langkah & WhatsApp (selesai)
-- **Test:** 38 passed / 38 total
-- **Sedang dikerjakan:** Menunggu Fase 8 — Tentang, FAQ, Kontak
+- **Fase aktif:** Fase 8 — Tentang, FAQ, Kontak (selesai)
+- **Test:** 41 passed / 41 total
+- **Sedang dikerjakan:** Menunggu Fase 9 — Polishing UX, Aksesibilitas, SEO & Performa
 - **Update terakhir:** 2026-10-10
 
 > Update 3 baris di atas setiap kali fase/task berubah. Jangan biarkan basi.

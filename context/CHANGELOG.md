@@ -14,6 +14,17 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Fase 8 — Halaman Informasi (Tentang, FAQ, Kontak) (2026-10-10)
+**FR terkait:** FR-7.1, FR-7.2, FR-7.3
+**Yang dikerjakan:**
+- Merakit `src/pages/About.vue` (FR-7.1: profil perusahaan, visi & misi, nilai utama layanan, dan garis waktu sejarah perkembangan bisnis)
+- Merakit `src/pages/Faq.vue` (FR-7.2: pertanyaan umum dikelompokkan per kategori via `Accordion.vue` dengan fitur *live search* pencarian kata kunci interaktif)
+- Merakit `src/pages/Contact.vue` (FR-7.3: informasi kontak & peta dummy, form pesan umum dengan validasi Zod, perlindungan *honeypot*, serta simulasi pengiriman pesan + notifikasi Toast)
+- Menulis unit test untuk halaman informasi, filter pencarian FAQ, dan validasi form kontak (`src/test/infoPages.test.js`)
+**File yang berubah:** src/pages/About.vue, src/pages/Faq.vue, src/pages/Contact.vue, src/test/infoPages.test.js, AGENTS.md, context/CHANGELOG.md
+**Test:** 41 passed / 41 total
+**Docs updated:** tidak ada perubahan scope
+
 ## Fase 7 — Pemesanan 3 Langkah & WhatsApp (2026-10-10)
 **FR terkait:** FR-6.1, FR-6.2, FR-6.3, FR-6.4, FR-6.5, FR-6.6
 **Yang dikerjakan:**
