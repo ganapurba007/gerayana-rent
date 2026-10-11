@@ -23,6 +23,11 @@ const selectedIndex = ref(0)
         :src="images[selectedIndex] || images[0]"
         :alt="alt"
         class="w-full h-full object-cover transition-opacity duration-300"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        width="800"
+        height="500"
       />
     </div>
 
@@ -38,7 +43,15 @@ const selectedIndex = ref(0)
           selectedIndex === idx ? 'border-brand-600 ring-2 ring-brand-500/30 scale-95' : 'border-slate-200 opacity-70 hover:opacity-100'
         ]"
       >
-        <img :src="img" :alt="`${alt} thumbnail ${idx + 1}`" class="w-full h-full object-cover" />
+        <img
+          :src="img"
+          :alt="`${alt} thumbnail ${idx + 1}`"
+          class="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
+          width="96"
+          height="60"
+        />
       </button>
     </div>
   </div>

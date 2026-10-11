@@ -67,6 +67,11 @@ onUnmounted(() => {
           :src="slide.image"
           :alt="slide.headline"
           class="w-full h-full object-cover object-center"
+          :loading="idx === 0 ? 'eager' : 'lazy'"
+          :fetchpriority="idx === 0 ? 'high' : 'auto'"
+          decoding="async"
+          width="1920"
+          height="800"
         />
         <!-- Gradient Overlays for Readability -->
         <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-transparent" />

@@ -90,6 +90,11 @@ useHead({
               :src="tour.images[0]"
               :alt="tour.title"
               class="w-full h-full object-cover"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+              width="800"
+              height="500"
             />
           </div>
 

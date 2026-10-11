@@ -42,6 +42,9 @@ function goToDetail() {
         :alt="tour.title"
         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         loading="lazy"
+        decoding="async"
+        width="480"
+        height="300"
       />
 
       <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-10">

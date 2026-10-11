@@ -4,19 +4,19 @@
       "id": 1,
       "headline": "Jelajahi Kota & Alam Tanpa Batas",
       "subheadline": "Sewa mobil dan motor prima dengan harga jujur, transparan, dan proses pemesanan praktis lewat WhatsApp.",
-      "image": "/images/home/hero-roadtrip.jpg"
+      "image": "/images/home/hero-roadtrip.webp"
     },
     {
       "id": 2,
       "headline": "Nikmati Momen Liburan Tak Terlupakan",
       "subheadline": "Paket wisata pilihan dengan itinerary lengkap, driver berpengalaman, dan armada paling nyaman.",
-      "image": "/images/home/hero-bali-coast.jpg"
+      "image": "/images/home/hero-bali-coast.webp"
     },
     {
       "id": 3,
       "headline": "Armada Terawat & Bebas Khawatir",
       "subheadline": "Setiap unit rutin diservis dan diservis berkala. Antar-jemput tepat waktu di lokasi pilihan Anda.",
-      "image": "/images/home/hero-mountain-drive.jpg"
+      "image": "/images/home/hero-mountain-drive.webp"
     }
   ],
   "benefits": [
@@ -44,8 +44,20 @@
   ],
   "experienceYears": 5,
   "stats": [
-    { "label": "Unit Kendaraan Disewakan", "value": 45, "suffix": "+" },
-    { "label": "Destinasi Wisata Pilihan", "value": 18, "suffix": " Paket" },
-    { "label": "Pelanggan Puas", "value": 2500, "suffix": "+" }
+    {
+      "label": "Unit Kendaraan Disewakan",
+      "value": 45,
+      "suffix": "+"
+    },
+    {
+      "label": "Destinasi Wisata Pilihan",
+      "value": 18,
+      "suffix": " Paket"
+    },
+    {
+      "label": "Pelanggan Puas",
+      "value": 2500,
+      "suffix": "+"
+    }
   ]
 }

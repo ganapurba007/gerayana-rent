@@ -99,6 +99,10 @@ const itemDetails = computed(() => {
           :src="itemDetails.image"
           :alt="itemDetails.name || itemDetails.title"
           class="w-full sm:w-32 aspect-16/10 rounded-xl object-cover border border-slate-200 shrink-0"
+          loading="lazy"
+          decoding="async"
+          width="128"
+          height="80"
         />
         <div class="space-y-1">
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">

@@ -46,6 +46,9 @@ import { Quote, Star } from 'lucide-vue-next'
               :alt="item.name"
               class="w-11 h-11 rounded-full object-cover border border-slate-200"
               loading="lazy"
+              decoding="async"
+              width="44"
+              height="44"
             />
             <div>
               <h4 class="text-sm font-bold text-slate-900 leading-none">

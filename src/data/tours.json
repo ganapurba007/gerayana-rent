@@ -67,7 +67,7 @@
     ],
     "meetingPoint": "Stasiun / Bandara / Hotel Area Kota",
     "images": [
-      "/images/tours/tour-bromo.jpg"
+      "/images/tours/tour-bromo.webp"
     ],
     "featured": true,
     "popularity": 99
@@ -125,7 +125,7 @@
     ],
     "meetingPoint": "Lobby Hotel / Stasiun / Bandara",
     "images": [
-      "/images/tours/tour-heritage.jpg"
+      "/images/tours/tour-heritage.webp"
     ],
     "featured": true,
     "popularity": 93
@@ -205,7 +205,7 @@
     ],
     "meetingPoint": "Bandara Utama / Stasiun Kota",
     "images": [
-      "/images/tours/tour-snorkeling.jpg"
+      "/images/tours/tour-snorkeling.webp"
     ],
     "featured": true,
     "popularity": 95
@@ -263,7 +263,7 @@
     ],
     "meetingPoint": "Kota Center / Hotel Peserta",
     "images": [
-      "/images/tours/tour-waterfall-v2.jpg"
+      "/images/tours/tour-waterfall-v2.webp"
     ],
     "featured": false,
     "popularity": 87
@@ -328,7 +328,7 @@
     ],
     "meetingPoint": "Point Penjemputan Pilihan",
     "images": [
-      "/images/tours/tour-teaplantation-v2.jpg"
+      "/images/tours/tour-teaplantation-v2.webp"
     ],
     "featured": false,
     "popularity": 90

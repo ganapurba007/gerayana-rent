@@ -14,6 +14,21 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Fase 9 — Optimasi Performa, WebP, Font Preconnect & Asset Chunking (2026-10-11)
+**FR terkait:** FR-9.x, UX-11
+**Yang dikerjakan:**
+- Mengadopsi gambar format modern `.webp` untuk seluruh armada kendaraan, paket wisata, dan banner hero beranda.
+- Mengoptimasi `index.html`: menambahkan atribut `lang="id"`, meta description terpadu, `preconnect` & `stylesheet` Google Fonts, serta `preload` gambar LCP hero beranda (`/images/home/hero-roadtrip.webp`).
+- Menghapus `@import` Google Fonts pemblokir render dari `src/assets/main.css` untuk mempercepat First Contentful Paint (FCP).
+- Menerapkan atribut pemuatan gambar di semua komponen (`HeroSection`, `VehicleCard`, `TourCard`, `VehicleGallery`, `TourDetail`, `TestimonialsSection`, `BookingStep1`):
+  - Prioritas LCP: `loading="eager"`, `fetchpriority="high"`, `decoding="async"`.
+  - Gambar di bawah fold: `loading="lazy"`, `decoding="async"`.
+  - Rasio dan dimensi eksplisit (`width`/`height`) untuk mencegah pergeseran tata letak (CLS).
+- Mengonfigurasi Rollup `manualChunks` di `vite.config.js` untuk memecah `vendor-core` (Vue, Router, Head), `vendor-forms` (VeeValidate, Zod), dan `vendor-icons` (Lucide) sehingga kompilasi dan cache browser jauh lebih efisien. Waktu build turun dari 19.5s menjadi 8.4s.
+**File yang berubah:** `index.html`, `vite.config.js`, `src/assets/main.css`, `src/components/sections/HeroSection.vue`, `src/components/vehicle/VehicleCard.vue`, `src/components/tour/TourCard.vue`, `src/components/vehicle/VehicleGallery.vue`, `src/pages/TourDetail.vue`, `src/components/sections/TestimonialsSection.vue`, `src/components/forms/BookingStep1.vue`, `src/data/home.json`, `src/data/tours.json`, `src/data/vehicles.json`, `context/CHANGELOG.md`, `AGENTS.md`
+**Test:** 41 passed / 41 total
+**Docs updated:** tidak ada perubahan scope
+
 ## Pemisahan Menu Navigasi Sewa Mobil & Sewa Motor (2026-10-10)
 **Yang dikerjakan:**
 - Memisahkan dropdown menu "Armada" menjadi dua menu langsung di bilah navigasi utama (Navbar): **"Sewa Mobil"** (`/armada?type=mobil`) dan **"Sewa Motor"** (`/armada?type=motor`), baik pada tampilan desktop maupun drawer navigasi mobile.
