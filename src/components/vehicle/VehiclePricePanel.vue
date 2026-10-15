@@ -2,7 +2,7 @@
 import { ref, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import locationsData from '../../data/locations.json'
-import companyData from '../../data/company.json'
+import { useRental } from '../../composables/useRental'
 import { calculateVehiclePrice } from '../../lib/pricing'
 import { isVehicleAvailable } from '../../lib/availability'
 import { formatCurrency } from '../../lib/format'
@@ -27,6 +27,7 @@ const props = defineProps({
 })
 
 const router = useRouter()
+const { rental, rentalLink } = useRental()
 const { saveDraft } = useBookingDraft()
 
 const today = getTodayString()
@@ -42,8 +43,8 @@ const selectedExtras = ref([])
 
 // Operating hours slots per 30 minutes
 const timeSlots = computed(() => {
-  const open = companyData.operatingHours.openHour || 7
-  const close = companyData.operatingHours.closeHour || 21
+  const open = rental.value.operatingHours?.openHour || 7
+  const close = rental.value.operatingHours?.closeHour || 21
   const slots = []
   for (let h = open; h <= close; h++) {
     const hourStr = String(h).padStart(2, '0')
@@ -92,7 +93,7 @@ function handleBookNow() {
   }
 
   saveDraft(draft)
-  router.push('/pesan')
+  router.push(rentalLink('/pesan'))
 }
 </script>
 

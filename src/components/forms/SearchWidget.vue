@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { useRental } from '../../composables/useRental'
 import locationsData from '../../data/locations.json'
 import { getTodayString, getTomorrowString, addDaysString } from '../../lib/dates'
 import Button from '../ui/Button.vue'
@@ -30,6 +31,7 @@ const props = defineProps({
 })
 
 const router = useRouter()
+const { rentalLink } = useRental()
 
 const type = ref(props.initialType || 'mobil')
 const locationId = ref(props.initialLocation || (locationsData.length > 0 ? locationsData[0].id : ''))
@@ -79,7 +81,7 @@ function handleSearch() {
   if (!validateDates()) return
 
   router.push({
-    path: '/armada',
+    path: rentalLink('/armada'),
     query: {
       type: type.value,
       lokasi: locationId.value,

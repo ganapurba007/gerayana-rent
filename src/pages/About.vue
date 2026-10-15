@@ -1,14 +1,17 @@
 <script setup>
+import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
-import companyData from '../data/company.json'
+import { useRental } from '../composables/useRental'
 import Card from '../components/ui/Card.vue'
 import Badge from '../components/ui/Badge.vue'
 import { Car, ShieldCheck, HeartHandshake, Award, Clock, History, Target, Sparkles } from 'lucide-vue-next'
 
+const { rental } = useRental()
+
 useHead({
-  title: 'Tentang Kami - Gerayana Rental & Trip',
+  title: computed(() => `Tentang Kami - ${rental.value.name}`),
   meta: [
-    { name: 'description', content: companyData.about }
+    { name: 'description', content: computed(() => rental.value.about) }
   ]
 })
 
@@ -47,10 +50,10 @@ const values = [
             <span>Profil Perusahaan</span>
           </Badge>
           <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
-            Mengenal Lebih Dekat {{ companyData.name }}
+            Mengenal Lebih Dekat {{ rental.name }}
           </h1>
           <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-            {{ companyData.tagline }}
+            {{ rental.tagline }}
           </p>
         </div>
       </div>
@@ -63,7 +66,7 @@ const values = [
           </div>
           <h2 class="text-2xl font-bold text-slate-900">Tentang Kami</h2>
           <p class="text-slate-600 text-sm leading-relaxed">
-            {{ companyData.about }}
+            {{ rental.about }}
           </p>
         </Card>
 
@@ -73,7 +76,7 @@ const values = [
           </div>
           <h2 class="text-2xl font-bold text-slate-900">Visi & Misi Layanan</h2>
           <p class="text-slate-700 text-sm leading-relaxed font-medium">
-            {{ companyData.vision }}
+            {{ rental.vision }}
           </p>
         </Card>
       </div>
@@ -97,20 +100,20 @@ const values = [
       </div>
 
       <!-- Timeline History Section (FR-7.1) -->
-      <div v-if="companyData.history && companyData.history.length > 0" class="space-y-8 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-xs">
+      <div v-if="rental.history && rental.history.length > 0" class="space-y-8 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-xs">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center">
             <History class="w-5 h-5" />
           </div>
           <div>
             <h2 class="text-2xl font-extrabold text-slate-900">Perjalanan Singkat Kami</h2>
-            <span class="text-xs text-slate-500 font-medium">Jejak langkah perkembangan Gerayana Rent dari waktu ke waktu</span>
+            <span class="text-xs text-slate-500 font-medium">Jejak langkah perkembangan {{ rental.shortName || 'Gerayana' }} Rent dari waktu ke waktu</span>
           </div>
         </div>
 
         <div class="relative border-l-2 border-brand-200 ml-4 pl-6 space-y-8">
           <div
-            v-for="(item, idx) in companyData.history"
+            v-for="(item, idx) in rental.history"
             :key="idx"
             class="relative group"
           >

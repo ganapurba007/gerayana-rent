@@ -20,6 +20,20 @@
 | social | object[] | opsional | `{ name, url, icon }` |
 | history | object[] | opsional | `{ year, title, description }` |
 
+## rentals.json (objek tunggal: registry profil rental multi-client mockup)
+| Field | Tipe | Constraint | Keterangan |
+|---|---|---|---|
+| default | string | wajib | Slug profil default (mis. `"gerayana"`) |
+| rentals | object | wajib | Map `slug` ke objek profil rental klien (`gerayana`, `surya-rental`, dll.) |
+| rentals[slug].name | string | wajib | Nama lengkap rental (mis. "Surya Rental & Tour") |
+| rentals[slug].shortName | string | opsional | Nama pendek/akronim untuk navbar (mis. "SURYA") |
+| rentals[slug].subName | string | opsional | Subjudul untuk navbar (mis. "Rental & Tour") |
+| rentals[slug].tagline | string | opsional | Slogan rental |
+| rentals[slug].about | string | opsional | Deskripsi ringkas profil |
+| rentals[slug].logo | string | opsional | Path SVG / gambar logo rental di `/public` |
+| rentals[slug].colors | object | wajib | `{ brand: "#hex", accent: "#hex" }` palet warna tema |
+| rentals[slug].contact | object | opsional | Override nomor telepon, whatsapp dummy, email, alamat |
+
 ## home.json (objek tunggal)
 | Field | Tipe | Constraint | Keterangan |
 |---|---|---|---|

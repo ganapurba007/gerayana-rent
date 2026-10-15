@@ -14,6 +14,21 @@ Format tiap entri:
 **Docs updated:** [PRD §9 / SCHEMA.md / tidak ada perubahan scope]
 -->
 
+## Dynamic Client Mockup Branding & Whitelabel Subpath System (2026-10-15)
+**Yang dikerjakan:**
+- Membuat sistem profil rental multi-client terpusat di `src/data/rentals.json` (mendukung `gerayana` default dan `surya-rental` sebagai preset siap pakai untuk mockup).
+- Menambahkan aset logo SVG kustom di `public/images/logos/gerayana.svg` dan `public/images/logos/surya-rental.svg`.
+- Membuat library fungsi murni `src/lib/theme.js` untuk kalkulasi hex ke RGB, generate 50-950 color shades, dan injeksi CSS variable Tailwind dinamis ke DOM (`--color-brand-*` & `--color-accent-*`).
+- Membuat helper murni `src/lib/rentals.js` untuk resolusi profil klien terdaftar dan sintesis cerdas jika slug kustom diinput di URL.
+- Membuat composable reaktif `src/composables/useRental.js` (`setRental`, `rental`, `rentalLink`, `availableRentals`, `isDefaultRental`).
+- Mengonfigurasi `tailwind.config.js` dan `src/assets/main.css` agar token `brand` dan `accent` menggunakan channel variabel CSS dinamis dengan fallback yang aman.
+- Memperbarui router `src/router/index.js` dengan dukungan path rute multi-tenant `/:rentalSlug/...`, subpath prefix `/gerayana-rent/:rentalSlug/...`, serta navigation guard sinkronisasi profil rental dari param URL atau query `?rental=...` / `?client=...`.
+- Memperbarui seluruh komponen layout dan halaman (`Navbar.vue`, `TopBar.vue`, `Footer.vue`, `FloatingWhatsApp.vue`, `HeroSection.vue`, `WhyUsSection.vue`, `AboutSection.vue`, `CallToActionStrip.vue`, `SearchWidget.vue`, `VehicleCard.vue`, `TourCard.vue`, `VehiclePricePanel.vue`, `TourPricePanel.vue`, `EmptyState.vue`, `BookingStep3.vue`, `Breadcrumb.vue`, `About.vue`, `Contact.vue`, `Home.vue`, `NotFound.vue`) agar menggunakan state rental aktif dan tautan `rentalLink`.
+- Menulis unit test baru untuk `theme.test.js`, `rentals.test.js`, `useRental.test.js`, serta validasi schema `rentals.json`.
+**File yang berubah:** `src/data/rentals.json`, `public/images/logos/*.svg`, `src/lib/theme.js`, `src/lib/rentals.js`, `src/composables/useRental.js`, `tailwind.config.js`, `src/assets/main.css`, `src/router/index.js`, `src/components/**/*.vue`, `src/pages/**/*.vue`, `src/test/*.js`, `context/SCHEMA.md`, `context/PRD.md`, `context/CHANGELOG.md`, `AGENTS.md`
+**Test:** 57 passed / 57 total
+**Docs updated:** PRD §9 (Amandemen) & SCHEMA.md
+
 ## Fase 9 — Optimasi Performa, WebP, Font Preconnect & Asset Chunking (2026-10-11)
 **FR terkait:** FR-9.x, UX-11
 **Yang dikerjakan:**

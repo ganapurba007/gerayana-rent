@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue'
-import companyData from '../../data/company.json'
+import { useRental } from '../../composables/useRental'
 import vehiclesData from '../../data/vehicles.json'
 import toursData from '../../data/tours.json'
 import locationsData from '../../data/locations.json'
@@ -23,6 +23,7 @@ const props = defineProps({
 const emit = defineEmits(['back', 'finish'])
 const { success } = useToast()
 const { clearDraft } = useBookingDraft()
+const { rental } = useRental()
 
 const itemDetails = computed(() => {
   if (!props.draft || !props.draft.itemSlug) return null
@@ -40,7 +41,7 @@ const itemDetails = computed(() => {
     return {
       kind: 'armada',
       name: vehicle.name,
-      companyName: companyData.name,
+      companyName: rental.value.name,
       locationName: locationObj ? locationObj.name : props.draft.pickupLocationId,
       pricing
     }
@@ -51,7 +52,7 @@ const itemDetails = computed(() => {
     return {
       kind: 'paket',
       title: tour.title,
-      companyName: companyData.name,
+      companyName: rental.value.name,
       pricing
     }
   }
@@ -60,7 +61,7 @@ const itemDetails = computed(() => {
 const waUrl = computed(() => {
   if (!itemDetails.value) return '#'
   return buildBookingWhatsAppUrl(
-    companyData.contact.whatsapp,
+    rental.value.contact.whatsapp,
     props.draft,
     itemDetails.value,
     itemDetails.value.locationName
@@ -74,7 +75,7 @@ function handleSendWhatsApp() {
 }
 
 function handleCopySummary() {
-  let summaryText = `*RINGKASAN PESANAN - GERAYANA RENT*\n\n`
+  let summaryText = `*RINGKASAN PESANAN - ${rental.value.name.toUpperCase()}*\n\n`
   if (props.draft.kind === 'armada') {
     summaryText += `Item: ${itemDetails.value?.name}\n`
     summaryText += `Tanggal: ${formatDate(props.draft.startDate)} s/d ${formatDate(props.draft.endDate)}\n`

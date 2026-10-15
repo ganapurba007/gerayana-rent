@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="gerayana-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#gerayana-grad)" />
+  <!-- Stylized car silhouette -->
+  <path d="M26 56 L33 40 C35 36 38 34 43 34 L57 34 C62 34 65 36 67 40 L74 56 C77 56 79 58 79 61 L79 67 C79 69 77 71 75 71 L73 71 C73 75 70 78 66 78 C62 78 59 75 59 71 L41 71 C41 75 38 78 34 78 C30 78 27 75 27 71 L25 71 C23 71 21 69 21 67 L21 61 C21 58 23 56 26 56 Z" fill="white" opacity="0.95"/>
+  <!-- Windows -->
+  <path d="M37 42 L47 42 L47 52 L32 52 Z" fill="#0f766e" />
+  <path d="M53 42 L63 42 L68 52 L53 52 Z" fill="#0f766e" />
+  <!-- Wheels -->
+  <circle cx="34" cy="71" r="5" fill="#042f2e" />
+  <circle cx="34" cy="71" r="2.5" fill="#5eead4" />
+  <circle cx="66" cy="71" r="5" fill="#042f2e" />
+  <circle cx="66" cy="71" r="2.5" fill="#5eead4" />
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="juragan-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14532d" />
+      <stop offset="50%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#juragan-grad)" />
+  <!-- Crown / Star motif for "Juragan" -->
+  <path d="M28 42 L38 28 L50 36 L62 28 L72 42 L72 48 L28 48 Z" fill="#fef08a" />
+  <!-- Stylized modern car -->
+  <path d="M26 64 L33 52 C35 49 38 48 43 48 L57 48 C62 48 65 49 67 52 L74 64 C77 64 79 66 79 69 L79 73 C79 75 77 77 75 77 L73 77 C73 81 70 84 66 84 C62 84 59 81 59 77 L41 77 C41 81 38 84 34 84 C30 84 27 81 27 77 L25 77 C23 77 21 75 21 73 L21 69 C21 66 23 64 26 64 Z" fill="white" opacity="0.98"/>
+  <circle cx="34" cy="77" r="4.5" fill="#14532d" />
+  <circle cx="66" cy="77" r="4.5" fill="#14532d" />
+</svg>

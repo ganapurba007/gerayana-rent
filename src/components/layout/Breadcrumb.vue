@@ -1,13 +1,16 @@
 <script setup>
 import { ChevronRight, Home } from 'lucide-vue-next'
+import { useRental } from '../../composables/useRental'
 
 defineProps({
   items: {
     type: Array,
-    required: true,
+    required: true
     // [{ label: 'Armada', to: '/armada' }, { label: 'Toyota Innova Zenix' }]
   }
 })
+
+const { rentalLink } = useRental()
 </script>
 
 <template>
@@ -15,7 +18,7 @@ defineProps({
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <ol class="flex items-center flex-wrap gap-1.5 text-slate-600">
         <li>
-          <router-link to="/" class="flex items-center gap-1 hover:text-brand-600 transition-colors">
+          <router-link :to="rentalLink('/')" class="flex items-center gap-1 hover:text-brand-600 transition-colors">
             <Home class="w-3.5 h-3.5" />
             <span>Beranda</span>
           </router-link>
@@ -28,7 +31,7 @@ defineProps({
           <li>
             <router-link
               v-if="item.to && index < items.length - 1"
-              :to="item.to"
+              :to="rentalLink(item.to)"
               class="hover:text-brand-600 transition-colors"
             >
               {{ item.label }}

@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { useRental } from '../../composables/useRental'
 import { calculateTourPrice } from '../../lib/pricing'
 import { formatCurrency } from '../../lib/format'
 import { getTodayString, getTomorrowString } from '../../lib/dates'
@@ -24,6 +25,7 @@ const props = defineProps({
 })
 
 const router = useRouter()
+const { rentalLink } = useRental()
 const { saveDraft } = useBookingDraft()
 
 const today = getTodayString()
@@ -48,7 +50,7 @@ function handleBookNow() {
   }
 
   saveDraft(draft)
-  router.push('/pesan')
+  router.push(rentalLink('/pesan'))
 }
 </script>
 

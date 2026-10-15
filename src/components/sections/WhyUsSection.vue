@@ -1,8 +1,10 @@
 <script setup>
 import homeData from '../../data/home.json'
+import { useRental } from '../../composables/useRental'
 import Card from '../ui/Card.vue'
 import { Zap, MapPin, ShieldCheck } from 'lucide-vue-next'
 
+const { rental } = useRental()
 const benefits = homeData.benefits || []
 
 const iconMap = {
@@ -21,7 +23,7 @@ const iconMap = {
           Keunggulan Kami
         </span>
         <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Kenapa Memilih Gerayana Rent?
+          Kenapa Memilih {{ rental.shortName || 'Gerayana' }} Rent?
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-3">
           Komitmen kami adalah memberikan kemudahan, keamanan, dan kenyamanan bertransaksi tanpa ribet.

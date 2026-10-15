@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import companyData from '../data/company.json'
+import rentalsData from '../data/rentals.json'
 import homeData from '../data/home.json'
 import categoriesData from '../data/categories.json'
 import vehiclesData from '../data/vehicles.json'
@@ -13,6 +14,21 @@ describe('Data Integrity & Schema Validation', () => {
     expect(companyData.name).toBe('Gerayana Rental & Trip')
     expect(companyData.contact.whatsapp).toMatch(/^62[0-9]+$/)
     expect(companyData.operatingHours.openHour).toBeLessThan(companyData.operatingHours.closeHour)
+  })
+
+  it('rentals.json has default preset and valid presets with hex colors', () => {
+    expect(rentalsData.default).toBe('gerayana')
+    expect(rentalsData.rentals).toBeDefined()
+    expect(rentalsData.rentals[rentalsData.default]).toBeDefined()
+
+    Object.entries(rentalsData.rentals).forEach(([slug, item]) => {
+      expect(typeof slug).toBe('string')
+      expect(item.name).toBeDefined()
+      expect(item.colors?.brand).toMatch(/^#[0-9a-fA-F]{6}$/)
+      if (item.contact?.whatsapp) {
+        expect(item.contact.whatsapp).toMatch(/^62[0-9]+$/)
+      }
+    })
   })
 
   it('home.json has correct structure and slide counts', () => {

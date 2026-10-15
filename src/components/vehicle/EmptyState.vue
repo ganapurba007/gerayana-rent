@@ -1,15 +1,20 @@
 <script setup>
-import companyData from '../../data/company.json'
+import { computed } from 'vue'
+import { useRental } from '../../composables/useRental'
 import { buildGeneralWhatsAppUrl } from '../../lib/whatsapp'
 import Button from '../ui/Button.vue'
 import { Car, RotateCcw, MessageCircle } from 'lucide-vue-next'
 
 defineEmits(['reset'])
 
-const waUrl = buildGeneralWhatsAppUrl(
-  companyData.contact.whatsapp,
-  'Halo Gerayana Rent, saya mencari kendaraan yang tidak ada di hasil filter website.'
-)
+const { rental } = useRental()
+
+const waUrl = computed(() => {
+  return buildGeneralWhatsAppUrl(
+    rental.value.contact.whatsapp,
+    `Halo ${rental.value.name}, saya mencari kendaraan yang tidak ada di hasil filter website.`
+  )
+})
 </script>
 
 <template>

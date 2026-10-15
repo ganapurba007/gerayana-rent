@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { useRental } from '../../composables/useRental'
 import Card from '../ui/Card.vue'
 import Badge from '../ui/Badge.vue'
 import Button from '../ui/Button.vue'
@@ -15,6 +16,7 @@ const props = defineProps({
 })
 
 const router = useRouter()
+const { rentalLink } = useRental()
 
 const startingPrice = computed(() => {
   if (!props.tour.priceTiers || props.tour.priceTiers.length === 0) return 0
@@ -29,7 +31,7 @@ const durationText = computed(() => {
 })
 
 function goToDetail() {
-  router.push(`/paket-wisata/${props.tour.slug}`)
+  router.push(rentalLink(`/paket-wisata/${props.tour.slug}`))
 }
 </script>
 

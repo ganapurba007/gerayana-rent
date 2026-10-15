@@ -1,6 +1,7 @@
 <script setup>
+import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
-import companyData from '../data/company.json'
+import { useRental } from '../composables/useRental'
 import HeroSection from '../components/sections/HeroSection.vue'
 import WhyUsSection from '../components/sections/WhyUsSection.vue'
 import FeaturedVehiclesSection from '../components/sections/FeaturedVehiclesSection.vue'
@@ -10,10 +11,12 @@ import CallToActionStrip from '../components/sections/CallToActionStrip.vue'
 import FunFactsSection from '../components/sections/FunFactsSection.vue'
 import TestimonialsSection from '../components/sections/TestimonialsSection.vue'
 
+const { rental } = useRental()
+
 useHead({
-  title: `${companyData.name} - ${companyData.tagline}`,
+  title: computed(() => `${rental.value.name} - ${rental.value.tagline || 'Sewa Mobil & Motor'}`),
   meta: [
-    { name: 'description', content: companyData.about }
+    { name: 'description', content: computed(() => rental.value.about) }
   ]
 })
 </script>

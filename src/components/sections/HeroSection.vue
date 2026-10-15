@@ -2,8 +2,10 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import homeData from '../../data/home.json'
 import SearchWidget from '../forms/SearchWidget.vue'
+import { useRental } from '../../composables/useRental'
 import { ChevronLeft, ChevronRight } from 'lucide-vue-next'
 
+const { rental } = useRental()
 const slides = homeData.heroSlides || []
 const currentSlide = ref(0)
 let timer = null
@@ -85,7 +87,7 @@ onUnmounted(() => {
         <!-- Brand Eyebrow without badge pill style -->
         <div class="text-xs sm:text-sm font-bold uppercase tracking-widest text-brand-400 mb-3 flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-brand-400 inline-block"></span>
-          <span>Gerayana Rental & Trip</span>
+          <span>{{ rental.name }}</span>
         </div>
 
         <Transition

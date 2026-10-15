@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-brand-50: 240 253 250;
+    --color-brand-100: 204 251 241;
+    --color-brand-200: 153 246 228;
+    --color-brand-300: 94 234 212;
+    --color-brand-400: 45 212 191;
+    --color-brand-500: 20 184 166;
+    --color-brand-600: 13 148 136;
+    --color-brand-700: 15 118 110;
+    --color-brand-800: 17 94 89;
+    --color-brand-900: 19 78 74;
+    --color-brand-950: 4 47 46;
+
+    --color-accent-50: 255 251 235;
+    --color-accent-100: 254 243 199;
+    --color-accent-200: 253 230 138;
+    --color-accent-300: 252 211 77;
+    --color-accent-400: 251 191 36;
+    --color-accent-500: 245 158 11;
+    --color-accent-600: 217 119 6;
+    --color-accent-700: 180 83 9;
+    --color-accent-800: 146 64 14;
+    --color-accent-900: 120 53 15;
+  }
+
   html {
     scroll-behavior: smooth;
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;

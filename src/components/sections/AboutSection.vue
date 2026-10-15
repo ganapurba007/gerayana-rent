@@ -1,12 +1,13 @@
 <script setup>
 import { ref } from 'vue'
-import companyData from '../../data/company.json'
+import { useRental } from '../../composables/useRental'
 import homeData from '../../data/home.json'
 import Button from '../ui/Button.vue'
 import { useInView } from '../../composables/useInView'
 import { useCountUp } from '../../composables/useCountUp'
 import { CheckCircle2, ArrowRight, Award } from 'lucide-vue-next'
 
+const { rental, rentalLink } = useRental()
 const sectionRef = ref(null)
 const { isInView } = useInView(sectionRef)
 const { currentCount } = useCountUp(homeData.experienceYears || 5, isInView, 1500)
@@ -21,7 +22,7 @@ const { currentCount } = useCountUp(homeData.experienceYears || 5, isInView, 150
           <div class="aspect-4/3 rounded-3xl overflow-hidden bg-slate-100 shadow-xl border border-slate-200">
             <img
               src="/images/home/about-service.jpg"
-              alt="Layanan Profesional Gerayana Rent"
+              :alt="`Layanan Profesional ${rental.name}`"
               class="w-full h-full object-cover"
               loading="lazy"
             />
@@ -48,7 +49,7 @@ const { currentCount } = useCountUp(homeData.experienceYears || 5, isInView, 150
         <div class="space-y-6">
           <div>
             <span class="text-xs font-bold uppercase tracking-widest text-brand-600 block mb-2">
-              Tentang Gerayana Rent
+              Tentang {{ rental.name }}
             </span>
             <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Mitra Transportasi & Liburan Terbaik Anda
@@ -56,7 +57,7 @@ const { currentCount } = useCountUp(homeData.experienceYears || 5, isInView, 150
           </div>
 
           <p class="text-slate-600 text-base leading-relaxed">
-            {{ companyData.about }}
+            {{ rental.about }}
           </p>
 
           <!-- 4 Guarantee Points -->
@@ -73,7 +74,7 @@ const { currentCount } = useCountUp(homeData.experienceYears || 5, isInView, 150
 
           <!-- CTA Button -->
           <div class="pt-4">
-            <router-link to="/tentang">
+            <router-link :to="rentalLink('/tentang')">
               <Button variant="secondary" size="lg">
                 <span>Baca Selengkapnya</span>
                 <ArrowRight class="w-4 h-4" />

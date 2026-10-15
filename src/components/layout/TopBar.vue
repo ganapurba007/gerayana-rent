@@ -1,6 +1,8 @@
 <script setup>
-import companyData from '../../data/company.json'
+import { useRental } from '../../composables/useRental'
 import { Phone, Mail, Clock } from 'lucide-vue-next'
+
+const { rental } = useRental()
 </script>
 
 <template>
@@ -9,27 +11,27 @@ import { Phone, Mail, Clock } from 'lucide-vue-next'
       <!-- Left side: Contact info -->
       <div class="flex items-center gap-6">
         <a
-          :href="`tel:${companyData.contact.phone}`"
+          :href="`tel:${rental.contact.phone}`"
           class="flex items-center gap-1.5 hover:text-white transition-colors"
           title="Telepon Kami"
         >
           <Phone class="w-3.5 h-3.5 text-brand-400 shrink-0" />
-          <span>{{ companyData.contact.phone }}</span>
+          <span>{{ rental.contact.phone }}</span>
         </a>
         <a
-          :href="`mailto:${companyData.contact.email}`"
+          :href="`mailto:${rental.contact.email}`"
           class="flex items-center gap-1.5 hover:text-white transition-colors"
           title="Kirim Email"
         >
           <Mail class="w-3.5 h-3.5 text-brand-400 shrink-0" />
-          <span>{{ companyData.contact.email }}</span>
+          <span>{{ rental.contact.email }}</span>
         </a>
       </div>
 
       <!-- Right side: Operating Hours -->
       <div class="flex items-center gap-1.5 text-slate-400">
         <Clock class="w-3.5 h-3.5 text-accent-400 shrink-0" />
-        <span>{{ companyData.operatingHours.label }}</span>
+        <span>{{ rental.operatingHours?.label }}</span>
       </div>
     </div>
   </div>

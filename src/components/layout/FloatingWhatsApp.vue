@@ -1,10 +1,15 @@
 <script setup>
 import { computed } from 'vue'
-import companyData from '../../data/company.json'
+import { useRental } from '../../composables/useRental'
 import { buildGeneralWhatsAppUrl } from '../../lib/whatsapp'
 import { MessageCircle } from 'lucide-vue-next'
 
-const waUrl = computed(() => buildGeneralWhatsAppUrl(companyData.contact.whatsapp))
+const { rental } = useRental()
+
+const waUrl = computed(() => {
+  const msg = `Halo ${rental.value.name}, saya mau bertanya mengenai sewa kendaraan / paket wisata.`
+  return buildGeneralWhatsAppUrl(rental.value.contact.whatsapp, msg)
+})
 </script>
 
 <template>

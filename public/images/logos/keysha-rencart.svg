@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="keysha-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#keysha-grad)" />
+  <!-- Letter K & Key motif blended with car -->
+  <path d="M26 26 L36 26 L36 46 L58 26 L72 26 L48 50 L74 74 L60 74 L36 50 L36 74 L26 74 Z" fill="white" opacity="0.95"/>
+  <circle cx="70" cy="50" r="4" fill="#fef08a" />
+</svg>

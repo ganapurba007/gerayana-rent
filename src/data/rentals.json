@@ -1,0 +1,137 @@
+{
+  "default": "gerayana",
+  "rentals": {
+    "gerayana": {
+      "slug": "gerayana",
+      "name": "Gerayana Rental & Trip",
+      "shortName": "GERAYANA",
+      "subName": "Rental & Trip",
+      "tagline": "Solusi Sewa Mobil, Motor & Paket Wisata Terpercaya",
+      "about": "Gerayana Rental & Trip adalah penyedia jasa penyewaan kendaraan roda dua dan roda empat serta paket liburan terbaik. Kami berkomitmen memberikan pengalaman perjalanan yang aman, nyaman, dan transparan tanpa biaya tersembunyi.",
+      "vision": "Menjadi mitra transportasi dan perjalanan nomor satu yang paling handal dan memberikan kemudahan bertransaksi kepada seluruh wisatawan.",
+      "logo": "/images/logos/gerayana.svg",
+      "colors": {
+        "brand": "#14b8a6",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "081234567890",
+        "whatsapp": "6281234567890",
+        "email": "info@gerayana-rent.com",
+        "address": "Jl. Raya Utama No. 88, City Center, Indonesia",
+        "mapUrl": "https://maps.google.com/?q=Gerayana+Rental+Trip+Jogja",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Gerayana+Rental+Trip+Jogja&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "surya-rental": {
+      "slug": "surya-rental",
+      "name": "Surya Rental & Tour",
+      "shortName": "SURYA",
+      "subName": "Rental & Tour",
+      "tagline": "Sewa Mobil & Motor Nyaman, Bersih, dan Siap Jalan",
+      "about": "Surya Rental & Tour melayani rental mobil dan motor lepas kunci maupun dengan sopir profesional. Armada terawat, proses booking cepat, dan siap menemani perjalanan wisata serta urusan bisnis Anda.",
+      "vision": "Menjadi penyedia transportasi rental terdepan dengan armada prima, harga transparan, dan pelayanan ramah 24 jam.",
+      "logo": "/images/logos/surya-rental.svg",
+      "colors": {
+        "brand": "#ea580c",
+        "accent": "#0284c7"
+      },
+      "contact": {
+        "phone": "082198765432",
+        "whatsapp": "6282198765432",
+        "email": "kontak@suryarental.com",
+        "address": "Jl. Surya Kencana No. 45, Kota Baru, Indonesia",
+        "mapUrl": "https://maps.google.com/?q=Surya+Rental+Tour+Jogja",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Surya+Rental+Tour+Jogja&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "keysha-rencart": {
+      "slug": "keysha-rencart",
+      "name": "Keysha Rencart Jogja",
+      "shortName": "Keysha",
+      "subName": "Rental & Carter",
+      "tagline": "Sewa Mobil & Carter Jogja — Lepas Kunci & Dengan Sopir, Siap 24 Jam",
+      "about": "Keysha Rencart Jogja menyediakan layanan rental mobil dan carter di area Bantul dan sekitarnya. Armada terawat, proses mudah via WhatsApp, harga bersahabat tanpa biaya tersembunyi.",
+      "vision": "Menjadi pilihan utama sewa mobil di Jogja dengan pelayanan cepat, armada prima, dan kepuasan pelanggan nomor satu.",
+      "logo": "/images/logos/keysha-rencart.svg",
+      "colors": {
+        "brand": "#0ea5e9",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "081919555702",
+        "whatsapp": "6281919555702",
+        "email": "info@keysharencart.com",
+        "address": "Jl. Rajawali, Duwet, Sendangadi, Kec. Mlati, Kabupaten Sleman, D.I. Yogyakarta 55285",
+        "mapUrl": "https://maps.google.com/?q=Keysha+Rencart+Jogja+Sendangadi+Mlati+Sleman",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Keysha+Rencart+Sendangadi+Mlati+Sleman&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "morent-garage": {
+      "slug": "morent-garage",
+      "name": "Morent Garage",
+      "shortName": "Morent",
+      "subName": "Rental & Carter",
+      "tagline": "Rental Mobil Premium Condongcatur — Armada Terawat, Harga Transparan",
+      "about": "Morent Garage adalah penyedia rental mobil dan layanan carter di area Condongcatur, Depok, Sleman. Dengan rating bintang 5 di Google, kami mengutamakan kenyamanan dan kepuasan pelanggan dalam setiap perjalanan.",
+      "vision": "Menjadi penyedia rental mobil terpercaya di Sleman dengan armada prima dan pelayanan profesional 24 jam.",
+      "logo": "/images/logos/morent-garage.svg",
+      "colors": {
+        "brand": "#1d4ed8",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "087738011066",
+        "whatsapp": "6287738011066",
+        "email": "info@morentgarage.com",
+        "address": "Gg. Pucung III No.99, Ngropoh, Condongcatur, Kec. Depok, Kabupaten Sleman, D.I. Yogyakarta 55281",
+        "mapUrl": "https://maps.google.com/?q=Morent+Garage+Condongcatur+Depok+Sleman",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Morent+Garage+Condongcatur+Depok+Sleman&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "juragan-muda-rental": {
+      "slug": "juragan-muda-rental",
+      "name": "Juragan Muda Rental Mobil Jogja",
+      "shortName": "Juragan Muda",
+      "subName": "Rental Mobil",
+      "tagline": "Sewa Mobil Jogja Murah & Terpercaya — Lepas Kunci & Dengan Sopir",
+      "about": "Juragan Muda Rental Mobil Jogja melayani sewa mobil dengan berbagai pilihan armada di area Karangmalang, Depok, Sleman. Proses booking mudah via WhatsApp, harga bersahabat, dan armada selalu terawat.",
+      "vision": "Memberikan kemudahan akses transportasi rental bagi wisatawan dan masyarakat Jogja dengan harga terjangkau dan pelayanan prima.",
+      "logo": "/images/logos/juragan-muda-rental.svg",
+      "colors": {
+        "brand": "#16a34a",
+        "accent": "#eab308"
+      },
+      "contact": {
+        "phone": "082183290191",
+        "whatsapp": "6282183290191",
+        "email": "info@juraganudarental.com",
+        "address": "Jl. Amarta II No.D3, Karangmalang, Kec. Depok, Kabupaten Sleman, D.I. Yogyakarta 55281",
+        "mapUrl": "https://maps.google.com/?q=Juragan+Muda+Rental+Mobil+Jogja+Karangmalang+Depok+Sleman",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Juragan+Muda+Rental+Mobil+Jogja+Karangmalang+Depok+Sleman&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "sanjaya-rental": {
+      "slug": "sanjaya-rental",
+      "name": "Sanjaya Rental Mobil Yogya",
+      "shortName": "Sanjaya",
+      "subName": "Rental & Tour",
+      "tagline": "Sewa Mobil & City Tour Jogja — Dalam & Luar Kota, Antar Jemput Bandara",
+      "about": "Sanjaya Rental Mobil Yogya melayani jasa transportasi city tour dalam dan luar kota, antar jemput bandara, serta berbagai kebutuhan perjalanan. Berlokasi di Sedayu Bantul dengan armada lengkap mulai Avanza, Innova, Hiace, hingga Microbus.",
+      "vision": "Menjadi pilihan utama transportasi wisata dan rental mobil yang aman, nyaman, dan terpercaya di Daerah Istimewa Yogyakarta.",
+      "logo": "/images/logos/sanjaya-rental.svg",
+      "colors": {
+        "brand": "#dc2626",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "082226909192",
+        "whatsapp": "6282226909192",
+        "email": "info@sanjayarental.com",
+        "address": "Jalan Wates Km. 10, Pedes RT. 6, Argomulyo, Kec. Sedayu, Kabupaten Bantul, D.I. Yogyakarta 55753",
+        "mapUrl": "https://maps.google.com/?q=Sanjaya+Rental+Mobil+Yogya+Sedayu+Bantul",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Sanjaya+Rental+Mobil+Sedayu+Bantul&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    }
+  }
+}

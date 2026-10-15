@@ -3,9 +3,11 @@ import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { Car, Menu, X, Sparkles } from 'lucide-vue-next'
 import Button from '../ui/Button.vue'
+import { useRental } from '../../composables/useRental'
 
 const route = useRoute()
 const isMobileMenuOpen = ref(false)
+const { rental, rentalLink, currentSlug } = useRental()
 
 function toggleMobileMenu() {
   isMobileMenuOpen.value = !isMobileMenuOpen.value
@@ -54,14 +56,17 @@ const navLinks = [
 ]
 
 function isLinkActive(link) {
-  if (link.to === '/') return route.path === '/'
+  const currentPath = route.path
+  if (link.to === '/') {
+    return currentPath === '/' || currentPath === `/${currentSlug.value}` || currentPath === `/gerayana-rent/${currentSlug.value}`
+  }
   if (link.to === '/armada?type=mobil') {
-    return route.path === '/armada' && route.query.type !== 'motor'
+    return currentPath.endsWith('/armada') && route.query.type !== 'motor'
   }
   if (link.to === '/armada?type=motor') {
-    return route.path === '/armada' && route.query.type === 'motor'
+    return currentPath.endsWith('/armada') && route.query.type === 'motor'
   }
-  return route.path.startsWith(link.to)
+  return currentPath.endsWith(link.to) || currentPath.includes(link.to)
 }
 </script>
 
@@ -70,13 +75,16 @@ function isLinkActive(link) {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
-        <router-link to="/" class="flex items-center gap-3 group focus:outline-none" @click="closeMobileMenu">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 via-brand-600 to-brand-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+        <router-link :to="rentalLink('/')" class="flex items-center gap-3 group focus:outline-none" @click="closeMobileMenu">
+          <div v-if="rental.logo" class="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center bg-white shadow-md shadow-brand-500/10 border border-slate-100 group-hover:scale-105 transition-transform">
+            <img :src="rental.logo" :alt="rental.name" class="w-full h-full object-contain p-1" />
+          </div>
+          <div v-else class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 via-brand-600 to-brand-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
             <Car class="w-6 h-6" />
           </div>
           <div>
-            <span class="text-lg font-extrabold text-slate-900 tracking-tight leading-none block">GERAYANA</span>
-            <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-widest block mt-0.5">Rental & Trip</span>
+            <span class="text-lg font-extrabold text-slate-900 tracking-tight leading-none block uppercase">{{ rental.shortName || 'GERAYANA' }}</span>
+            <span class="text-[11px] font-semibold text-brand-600 uppercase tracking-widest block mt-0.5">{{ rental.subName || 'Rental & Trip' }}</span>
           </div>
         </router-link>
 
@@ -85,7 +93,7 @@ function isLinkActive(link) {
           <router-link
             v-for="link in navLinks"
             :key="link.name"
-            :to="link.to"
+            :to="rentalLink(link.to)"
             :class="[
               'px-3.5 py-2 rounded-lg text-sm font-medium transition-colors relative',
               isLinkActive(link)
@@ -99,7 +107,7 @@ function isLinkActive(link) {
 
         <!-- CTA Button (Desktop) -->
         <div class="hidden lg:flex items-center gap-3">
-          <router-link to="/armada">
+          <router-link :to="rentalLink('/armada')">
             <Button variant="accent" size="md">
               <Sparkles class="w-4 h-4 shrink-0" />
               <span>Cari Kendaraan</span>
@@ -153,7 +161,7 @@ function isLinkActive(link) {
         <router-link
           v-for="link in navLinks"
           :key="link.name"
-          :to="link.to"
+          :to="rentalLink(link.to)"
           @click="closeMobileMenu"
           :class="[
             'block px-4 py-2.5 rounded-lg text-base font-medium transition-colors',
@@ -166,7 +174,7 @@ function isLinkActive(link) {
         </router-link>
 
         <div class="pt-3 border-t border-slate-100">
-          <router-link to="/armada" @click="closeMobileMenu" class="block">
+          <router-link :to="rentalLink('/armada')" @click="closeMobileMenu" class="block">
             <Button variant="accent" size="lg" block>
               <Sparkles class="w-5 h-5 shrink-0" />
               <span>Cari Kendaraan</span>

@@ -203,6 +203,7 @@ Fase dianggap selesai jika:
 
 > Log semua perubahan/penambahan yang menyimpang dari rencana awal di §3/§4. Setiap entri baru ditambah di ATAS (paling baru di paling atas).
 
+- **2026-10-15 (White-label & Client Mockup Subpath)**: Menambahkan arsitektur profil rental multi-client mockup (`src/data/rentals.json`, `src/lib/theme.js`, `src/lib/rentals.js`, `src/composables/useRental.js`) dengan rute otomatis `/:rentalSlug` atau `?rental=...`. Nama bisnis, logo, palet warna brand/accent CSS variables dinamis, serta kontak WhatsApp otomatis berganti sesuai profil tenant yang diakses.
 - **2026-10-10 (FR-2.4)**: Menghapus section Tentang Kami singkat (`AboutSection.vue`) dari halaman Beranda (`Home.vue`) agar alur beranda lebih ringkas dan langsung fokus ke armada & layanan. Profil lengkap tetap tersedia di halaman tersendiri (`/tentang`).
 
 ## 10. Referensi Tampilan

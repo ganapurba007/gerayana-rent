@@ -1,17 +1,19 @@
 <script setup>
-import { ref, nextTick } from 'vue'
+import { ref, computed, nextTick } from 'vue'
 import { useHead } from '@unhead/vue'
-import companyData from '../data/company.json'
+import { useRental } from '../composables/useRental'
 import { contactFormSchema } from '../lib/schemas'
 import { useToast } from '../composables/useToast'
 import Card from '../components/ui/Card.vue'
 import Button from '../components/ui/Button.vue'
 import { MapPin, Phone, Mail, Clock, Send, MessageSquare, AlertCircle, CheckCircle2 } from 'lucide-vue-next'
 
+const { rental } = useRental()
+
 useHead({
-  title: 'Kontak Kami - Gerayana Rental & Trip',
+  title: computed(() => `Kontak Kami - ${rental.value.name}`),
   meta: [
-    { name: 'description', content: 'Hubungi tim Gerayana Rent untuk konsultasi sewa kendaraan dan pemesanan paket wisata.' }
+    { name: 'description', content: computed(() => `Hubungi tim ${rental.value.name} untuk konsultasi sewa kendaraan dan pemesanan paket wisata.`) }
   ]
 })
 
@@ -112,7 +114,7 @@ function handleSubmit() {
                 <MapPin class="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                 <div>
                   <strong class="text-slate-800 block">Alamat Garasi & Kantor:</strong>
-                  <span>{{ companyData.contact.address }}</span>
+                  <span>{{ rental.contact.address }}</span>
                 </div>
               </div>
 
@@ -120,8 +122,8 @@ function handleSubmit() {
                 <Phone class="w-4 h-4 text-brand-600 shrink-0" />
                 <div>
                   <strong class="text-slate-800 block">Telepon / WhatsApp:</strong>
-                  <a :href="`tel:${companyData.contact.phone}`" class="hover:text-brand-600 transition-colors">
-                    {{ companyData.contact.phone }}
+                  <a :href="`tel:${rental.contact.phone}`" class="hover:text-brand-600 transition-colors">
+                    {{ rental.contact.phone }}
                   </a>
                 </div>
               </div>
@@ -130,28 +132,38 @@ function handleSubmit() {
                 <Mail class="w-4 h-4 text-brand-600 shrink-0" />
                 <div>
                   <strong class="text-slate-800 block">Email Resmi:</strong>
-                  <a :href="`mailto:${companyData.contact.email}`" class="hover:text-brand-600 transition-colors">
-                    {{ companyData.contact.email }}
+                  <a :href="`mailto:${rental.contact.email}`" class="hover:text-brand-600 transition-colors">
+                    {{ rental.contact.email }}
                   </a>
                 </div>
               </div>
 
-              <div class="flex items-start gap-3 pt-2 border-t border-slate-100">
+              <div v-if="rental.operatingHours" class="flex items-start gap-3 pt-2 border-t border-slate-100">
                 <Clock class="w-4 h-4 text-accent-500 shrink-0 mt-0.5" />
                 <div>
                   <strong class="text-slate-800 block">Jam Operasional:</strong>
-                  <span>{{ companyData.operatingHours.label }}</span>
+                  <span>{{ rental.operatingHours.label }}</span>
                 </div>
               </div>
             </div>
           </Card>
 
-          <!-- Dummy Location Map Placeholder -->
+          <!-- Location Map -->
           <Card padding="none" class="overflow-hidden">
-            <div class="aspect-4/3 bg-slate-200 relative flex flex-col items-center justify-center p-6 text-center">
+            <div v-if="rental.contact?.mapEmbedUrl" class="aspect-4/3 w-full relative">
+              <iframe
+                :src="rental.contact.mapEmbedUrl"
+                class="w-full h-full border-0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Peta Lokasi Kantor"
+              ></iframe>
+            </div>
+            <div v-else class="aspect-4/3 bg-slate-200 relative flex flex-col items-center justify-center p-6 text-center">
               <MapPin class="w-10 h-10 text-brand-600 mb-2 animate-bounce" />
-              <span class="font-bold text-slate-800 text-sm">Peta Lokasi Kantor (Dummy)</span>
-              <span class="text-xs text-slate-500 mt-1 max-w-xs">{{ companyData.contact.address }}</span>
+              <span class="font-bold text-slate-800 text-sm">Peta Lokasi Kantor</span>
+              <span class="text-xs text-slate-500 mt-1 max-w-xs">{{ rental.contact.address }}</span>
             </div>
           </Card>
         </div>

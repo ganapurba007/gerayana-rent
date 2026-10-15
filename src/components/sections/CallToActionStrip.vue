@@ -1,10 +1,18 @@
 <script setup>
-import companyData from '../../data/company.json'
+import { computed } from 'vue'
+import { useRental } from '../../composables/useRental'
 import { buildGeneralWhatsAppUrl } from '../../lib/whatsapp'
 import Button from '../ui/Button.vue'
 import { Phone, MessageCircle } from 'lucide-vue-next'
 
-const waUrl = buildGeneralWhatsAppUrl(companyData.contact.whatsapp, 'Halo Gerayana Rent, saya mau konsultasi pemesanan kendaraan / paket wisata.')
+const { rental } = useRental()
+
+const waUrl = computed(() => {
+  return buildGeneralWhatsAppUrl(
+    rental.value.contact.whatsapp,
+    `Halo ${rental.value.name}, saya mau konsultasi pemesanan kendaraan / paket wisata.`
+  )
+})
 </script>
 
 <template>
@@ -26,10 +34,10 @@ const waUrl = buildGeneralWhatsAppUrl(companyData.contact.whatsapp, 'Halo Geraya
       </div>
 
       <div class="flex flex-wrap items-center justify-center gap-4 shrink-0">
-        <a :href="`tel:${companyData.contact.phone}`">
+        <a :href="`tel:${rental.contact.phone}`">
           <Button variant="outline" size="lg" class="border-white/30 text-white hover:bg-white/10 hover:border-white">
             <Phone class="w-5 h-5" />
-            <span>{{ companyData.contact.phone }}</span>
+            <span>{{ rental.contact.phone }}</span>
           </Button>
         </a>
 

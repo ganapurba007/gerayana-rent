@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { useRental } from '../../composables/useRental'
 import Card from '../ui/Card.vue'
 import Badge from '../ui/Badge.vue'
 import Button from '../ui/Button.vue'
@@ -24,6 +25,7 @@ const props = defineProps({
 })
 
 const router = useRouter()
+const { rentalLink } = useRental()
 
 const isAvailable = computed(() => {
   if (!props.startDate || !props.endDate) return true
@@ -31,13 +33,13 @@ const isAvailable = computed(() => {
 })
 
 function goToDetail() {
-  router.push(`/armada/${props.vehicle.slug}`)
+  router.push(rentalLink(`/armada/${props.vehicle.slug}`))
 }
 
 function handleBookNow() {
   if (!isAvailable.value) return
   router.push({
-    path: `/armada/${props.vehicle.slug}`,
+    path: rentalLink(`/armada/${props.vehicle.slug}`),
     query: {
       ambil: props.startDate || undefined,
       kembali: props.endDate || undefined
