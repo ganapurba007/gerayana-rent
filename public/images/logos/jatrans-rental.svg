@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="jatrans-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#115e59" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#2dd4bf" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#jatrans-grad)" />
+  <!-- Letter J & Road Arrow motif -->
+  <path d="M46 26 L58 26 L58 60 C58 68 52 74 42 74 C34 74 28 68 28 62 L38 62 C38 65 40 66 42 66 C46 66 48 64 48 60 Z" fill="white" opacity="0.95"/>
+  <!-- Modern car silhouette -->
+  <path d="M48 62 L54 52 C56 49 59 48 63 48 L72 48 C76 48 78 49 80 52 L86 62 C88 62 89 64 89 66 L89 70 C89 71 88 72 87 72 L85 72 C85 75 83 77 80 77 C77 77 75 75 75 72 L61 72 C61 75 59 77 56 77 C53 77 51 75 51 72 L49 72 C48 72 47 71 47 70 L47 66 C47 64 48 62 48 62 Z" fill="#fef08a" />
+</svg>

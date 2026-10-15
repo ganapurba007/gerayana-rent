@@ -132,6 +132,50 @@
         "mapUrl": "https://maps.google.com/?q=Sanjaya+Rental+Mobil+Yogya+Sedayu+Bantul",
         "mapEmbedUrl": "https://maps.google.com/maps?q=Sanjaya+Rental+Mobil+Sedayu+Bantul&t=&z=15&ie=UTF8&iwloc=&output=embed"
       }
+    },
+    "jatrans-rental": {
+      "slug": "jatrans-rental",
+      "name": "Jatrans Rental Mobil Jogja",
+      "shortName": "JATRANS",
+      "subName": "Rental & Carter",
+      "tagline": "Sewa Mobil & Carter Jogja — Lepas Kunci & Dengan Sopir, Siap 24 Jam",
+      "about": "Jatrans Rental Mobil Jogja menyediakan layanan rental mobil lepas kunci dan carter di area Banguntapan, Bantul. Armada terawat, proses mudah via WhatsApp, harga transparan tanpa biaya tersembunyi.",
+      "vision": "Menjadi pilihan utama sewa mobil di Jogja dengan layanan cepat, armada prima, dan kepuasan pelanggan nomor satu.",
+      "logo": "/images/logos/jatrans-rental.svg",
+      "colors": {
+        "brand": "#0d9488",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "08125450592",
+        "whatsapp": "6281225450592",
+        "email": "info@jatrans-rental.com",
+        "address": "Jl. Wonosari KM 7,2, Banguntapan, Kabupaten Bantul, D.I. Yogyakarta 55196",
+        "mapUrl": "https://maps.google.com/?q=Jatrans+Rental+Mobil+Jogja+Banguntapan",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Jatrans+Rental+Mobil+Jogja+Banguntapan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "pra-rental": {
+      "slug": "pra-rental",
+      "name": "PRA Rental Motor & Mobil",
+      "shortName": "PRA",
+      "subName": "Rental & Tour",
+      "tagline": "Sewa Motor & Mobil Jogja — Terpercaya, Bersih, dan Siap Jalan",
+      "about": "PRA Rental Motor & Mobil melayani penyewaan motor dan mobil lepas kunci serta dengan sopir di area Banguntapan, Bantul. Armada terjaga, proses booking cepat via WhatsApp, harga bersahabat.",
+      "vision": "Menjadi layanan rental motor & mobil terdepan di Jogja dengan armada prima dan pelayanan ramah 24 jam.",
+      "logo": "/images/logos/pra-rental.svg",
+      "colors": {
+        "brand": "#6d28d9",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "081229546969",
+        "whatsapp": "6281229461969",
+        "email": "info@pra-rental.com",
+        "address": "Jl. Ring Road Selatan Tamantirto, Kasihan, Kabupaten Bantul, D.I. Yogyakarta 55196",
+        "mapUrl": "https://maps.google.com/?q=PRA+Rental+Motor+Mobil+Kasihan",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=PRA+Rental+Motor+Mobil+Kasihan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
     }
   }
 }
