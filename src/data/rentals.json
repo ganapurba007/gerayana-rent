@@ -176,6 +176,116 @@
         "mapUrl": "https://maps.google.com/?q=PRA+Rental+Motor+Mobil+Kasihan",
         "mapEmbedUrl": "https://maps.google.com/maps?q=PRA+Rental+Motor+Mobil+Kasihan&t=&z=15&ie=UTF8&iwloc=&output=embed"
       }
+    },
+    "chaniago-rental-solo": {
+      "slug": "chaniago-rental-solo",
+      "name": "Rental Mobil Solo Chaniago",
+      "shortName": "CHANIAGO",
+      "subName": "Rental Mobil",
+      "tagline": "Sewa Mobil Solo — Lepas Kunci & Dengan Sopir, Buka 24 Jam",
+      "about": "Rental Mobil Solo Chaniago menyediakan layanan sewa mobil lepas kunci dan dengan sopir di area Cemani, Grogol, Sukoharjo. Armada terawat, proses booking cepat via WhatsApp, harga bersahabat tanpa biaya tersembunyi.",
+      "vision": "Menjadi pilihan utama rental mobil di Solo dengan pelayanan cepat, armada prima, dan kepuasan pelanggan nomor satu.",
+      "logo": "/images/logos/chaniago-rental-solo.svg",
+      "colors": {
+        "brand": "#e11d48",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "085743509999",
+        "whatsapp": "6285743509999",
+        "email": "info@chaniago-rental-solo.com",
+        "address": "Jl. Palem Turi RT 06 RW 09, Cemani, Grogol, Kab. Sukoharjo, Jawa Tengah 57552",
+        "mapUrl": "https://maps.google.com/?q=Rental+Mobil+Solo+Chaniago+Cemani+Grogol",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Rental+Mobil+Solo+Chaniago+Cemani+Grogol&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "hiro-rentcar-solo": {
+      "slug": "hiro-rentcar-solo",
+      "name": "Hiro Rentcar Solo",
+      "shortName": "HIRO",
+      "subName": "Rental & Transport",
+      "tagline": "Sewa Mobil Solo — Armada Lengkap, Bersih, Siap 24 Jam",
+      "about": "Hiro Rentcar Solo menyediakan layanan rental mobil dan agen perjalanan wisata di Kota Solo. Armada lengkap dari city car hingga bus pariwisata, proses booking mudah via WhatsApp.",
+      "vision": "Menjadi penyedia rental mobil dan transportasi wisata terdepan di Solo dengan armada prima dan pelayanan profesional.",
+      "logo": "/images/logos/hiro-rentcar-solo.svg",
+      "colors": {
+        "brand": "#7c3aed",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "085867775777",
+        "whatsapp": "6285867775777",
+        "email": "info@hiro-rentcar-solo.com",
+        "address": "Jl. Srigading III No.15, Mangkubumen, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139",
+        "mapUrl": "https://maps.google.com/?q=Hiro+Rentcar+Solo+Mangkubumen+Banjarsari",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Hiro+Rentcar+Solo+Mangkubumen+Banjarsari&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "ipf-rental-klaten": {
+      "slug": "ipf-rental-klaten",
+      "name": "IPF Rental Mobil Klaten Kota",
+      "shortName": "IPF",
+      "subName": "Rental Mobil",
+      "tagline": "Sewa Mobil Klaten — Buka 24 Jam, Armada Terawat",
+      "about": "IPF Rental Mobil Klaten Kota melayani sewa mobil lepas kunci dan dengan sopir di area Klaten Utara. Rating bintang 5 di Google Maps, proses booking cepat via WhatsApp.",
+      "vision": "Menjadi layanan rental mobil Klaten terdepan dengan armada prima dan harga transparan.",
+      "logo": "/images/logos/ipf-rental-klaten.svg",
+      "colors": {
+        "brand": "#2563eb",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "087838884431",
+        "whatsapp": "6287838884431",
+        "email": "info@ipf-rental-klaten.com",
+        "address": "Kwarsa, Gergunung, Kec. Klaten Utara, Kab. Klaten, Jawa Tengah 57434",
+        "mapUrl": "https://maps.google.com/?q=IPF+Rental+Mobil+Klaten+Kota+Gergunung",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=IPF+Rental+Mobil+Klaten+Kota+Gergunung&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "dms-rentcar-klaten": {
+      "slug": "dms-rentcar-klaten",
+      "name": "DMS Rentcar Klaten",
+      "shortName": "DMS",
+      "subName": "Rental Mobil",
+      "tagline": "Sewa Mobil Klaten — Buka 24 Jam, Rating Bintang 5",
+      "about": "DMS Rentcar Klaten menyediakan layanan sewa mobil di area Gedongan, Klaten Selatan. Rating bintang 5 di Google Maps, armada terawat, proses mudah via WhatsApp.",
+      "vision": "Menjadi penyedia rental mobil Klaten yang terpercaya dengan pelayanan ramah 24 jam.",
+      "logo": "/images/logos/dms-rentcar-klaten.svg",
+      "colors": {
+        "brand": "#0f766e",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "085707010000",
+        "whatsapp": "6285707010000",
+        "email": "info@dms-rentcar-klaten.com",
+        "address": "Gedongan RT.05/RW.09, Kec. Klaten Selatan, Kab. Klaten, Jawa Tengah 57425",
+        "mapUrl": "https://maps.google.com/?q=DMS+Rentcar+Klaten+Gedongan",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=DMS+Rentcar+Klaten+Gedongan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
+    },
+    "rental-driver-klaten-prambanan": {
+      "slug": "rental-driver-klaten-prambanan",
+      "name": "Rental Mobil Driver Klaten Prambanan",
+      "shortName": "KLATEN PRAMBANAN",
+      "subName": "Rental & Carter",
+      "tagline": "Sewa Mobil & Carter Klaten Prambanan — Buka 24 Jam, Rating Bintang 5",
+      "about": "Rental Mobil Driver Klaten Prambanan melayani sewa mobil dan carter di area Bugisan, Prambanan, Klaten. Buka 24 jam, rating bintang 5, proses booking cepat via WhatsApp.",
+      "vision": "Menjadi layanan rental mobil area Prambanan yang handal dengan armada prima dan pelayanan ramah.",
+      "logo": "/images/logos/rental-driver-klaten-prambanan.svg",
+      "colors": {
+        "brand": "#c2410c",
+        "accent": "#f59e0b"
+      },
+      "contact": {
+        "phone": "0895391426221",
+        "whatsapp": "62895391426221",
+        "email": "info@rental-klaten-prambanan.com",
+        "address": "Jl. Bugisan Raya, Sukoharjo, Bugisan, Kec. Prambanan, Kab. Klaten, Jawa Tengah 57454",
+        "mapUrl": "https://maps.google.com/?q=Rental+Mobil+Driver+Klaten+Prambanan+Bugisan",
+        "mapEmbedUrl": "https://maps.google.com/maps?q=Rental+Mobil+Driver+Klaten+Prambanan+Bugisan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      }
     }
   }
 }

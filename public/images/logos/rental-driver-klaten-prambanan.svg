@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="prambanan-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9a3412" />
+      <stop offset="50%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#prambanan-grad)" />
+  <!-- Prambanan Temple silhouette & car wheel motif -->
+  <path d="M50 18 L55 36 L52 36 L56 50 L44 50 L48 36 L45 36 Z" fill="#fef08a" />
+  <path d="M34 32 L38 46 L36 46 L39 56 L29 56 L32 46 L30 46 Z" fill="#fef08a" opacity="0.8" />
+  <path d="M66 32 L70 46 L68 46 L71 56 L61 56 L64 46 L62 46 Z" fill="#fef08a" opacity="0.8" />
+  <!-- Car Base -->
+  <path d="M26 66 L33 54 C35 52 38 51 43 51 L57 51 C62 51 65 52 67 54 L74 66 C77 66 79 68 79 71 L79 75 C79 77 77 79 75 79 L73 79 C73 83 70 86 66 86 C62 86 59 83 59 79 L41 79 C41 83 38 86 34 86 C30 86 27 83 27 79 L25 79 C23 79 21 77 21 75 L21 71 C21 68 23 66 26 66 Z" fill="white" opacity="0.95"/>
+  <circle cx="34" cy="79" r="4" fill="#9a3412" />
+  <circle cx="66" cy="79" r="4" fill="#9a3412" />
+</svg>
